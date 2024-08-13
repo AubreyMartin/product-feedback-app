@@ -56,12 +56,12 @@ const theme = createTheme({
       lineHeight: "22px",
       letterSpacing: "normal",
     },
-     body3: {
-      fontWeight: 600, // Jost Semibold
-      fontSize: '13px',
-      lineHeight: '19px',
-      letterSpacing: 'normal',
-    },
+    //  body3: {
+    //   fontWeight: 600, // Jost Semibold
+    //   fontSize: '13px',
+    //   lineHeight: '19px',
+    //   letterSpacing: 'normal',
+    // },
   },
 
   components: {
