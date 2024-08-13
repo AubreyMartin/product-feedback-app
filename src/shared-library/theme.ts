@@ -17,42 +17,32 @@ declare module "@mui/material/Typography" {
   }
 }
 
+
+
+
 const theme = createTheme({
   palette: {
-
     primary: {
       main: "#AD1FEA", // Primary color
+      light: "#D73737", // Light primary color
     },
-
     info: {
       main: "#4661E6", // Info color
     },
-
     secondary: {
       main: "#4661E6", // Secondary color
+      light: "#3A4374", // Light secondary color
     },
-
-    primaryLight: {
-      main: "#D73737", // Light primary color
-    },
-
     backgroundAlt: {
       main: "#F7F8FD", // Background alternative color
     },
-
-    secondaryLight: { 
-      main: "#3A4374", // Light secondary color
-    },
-
-    gray: { 
+    gray: {
       main: "#647196", // Gray color
     },
-
-    warning: { 
+    warning: {
       main: "#F49F85", // Warning color
     },
-
-    accent: { 
+    accent: {
       main: "#62BCFA", // Accent color
     }
   },
