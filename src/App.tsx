@@ -5,7 +5,6 @@ import Button from "@mui/material/Button";
 import { Stack, Typography } from "@mui/material";
 import "./App.css";
 
-
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -54,6 +53,7 @@ function App() {
         lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque
         euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu{" "}
       </Typography>
+
       <Typography variant="body3" className="typography-padding">
         {" "}
         Body 3 - Jost Semibold | 13px; 19px Line <br /> Sed egestas, ante et

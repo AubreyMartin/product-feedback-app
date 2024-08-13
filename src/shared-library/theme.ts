@@ -1,5 +1,6 @@
 // src/theme/theme.ts
 import { createTheme } from "@mui/material/styles";
+
 declare module "@mui/material/styles" {
   interface TypographyVariants {
     body3: React.CSSProperties;
@@ -56,14 +57,12 @@ const theme = createTheme({
       lineHeight: "22px",
       letterSpacing: "normal",
     },
-    //  body3: {
-    //   fontWeight: 600, // Jost Semibold
-    //   fontSize: '13px',
-    //   lineHeight: '19px',
-    //   letterSpacing: 'normal',
-    // },
-  },
-
+  
+     body3: {
+      fontWeight: 600, // Jost Semibold
+      fontSize: '13px',
+      lineHeight: '19px',
+      letterSpacing: 'normal',},},
   components: {
     MuiButton: {
       styleOverrides: {
