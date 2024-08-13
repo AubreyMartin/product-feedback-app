@@ -18,6 +18,46 @@ declare module "@mui/material/Typography" {
 }
 
 const theme = createTheme({
+  palette: {
+
+    primary: {
+      main: "#AD1FEA", // Primary color
+    },
+
+    info: {
+      main: "#4661E6", // Info color
+    },
+
+    secondary: {
+      main: "#4661E6", // Secondary color
+    },
+
+    primaryLight: {
+      main: "#D73737", // Light primary color
+    },
+
+    backgroundAlt: {
+      main: "#F7F8FD", // Background alternative color
+    },
+
+    secondaryLight: { 
+      main: "#3A4374", // Light secondary color
+    },
+
+    gray: { 
+      main: "#647196", // Gray color
+    },
+
+    warning: { 
+      main: "#F49F85", // Warning color
+    },
+
+    accent: { 
+      main: "#62BCFA", // Accent color
+    }
+  },
+
+
   typography: {
     fontFamily: "Jost, sans-serif",
     h1: {
@@ -56,12 +96,12 @@ const theme = createTheme({
       lineHeight: "22px",
       letterSpacing: "normal",
     },
-    //  body3: {
-    //   fontWeight: 600, // Jost Semibold
-    //   fontSize: '13px',
-    //   lineHeight: '19px',
-    //   letterSpacing: 'normal',
-    // },
+     body3: {
+      fontWeight: 600, // Jost Semibold
+      fontSize: '13px',
+      lineHeight: '19px',
+      letterSpacing: 'normal',
+    },
   },
 
   components: {
@@ -70,9 +110,7 @@ const theme = createTheme({
         root: {
           borderRadius: 8,
           padding: "8px 16px",
-          textTransform: "none",
-        },
-      },
+          textTransform: "none",}, },
 
       variants: [
         {
@@ -121,6 +159,9 @@ const theme = createTheme({
       ],
     },
   },
+
+
+
 });
 
 export default theme;
