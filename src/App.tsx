@@ -54,7 +54,7 @@ function App() {
         lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque
         euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu{" "}
       </Typography>
-      <Typography variant="body3" className="typography-padding">
+      {/* <Typography variant="body3" className="typography-padding">
         {" "}
         Body 3 - Jost Semibold | 13px; 19px Line <br /> Sed egestas, ante et
         vulputate volutpat, eros pede semper est, vitae luctus metus libero eu
@@ -65,7 +65,7 @@ function App() {
         nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium,
         ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget
         blandit nunc tortor eu nibh. Nullam mollis.{" "}
-      </Typography>
+      </Typography> */}
 
       {/* // the code starts here // */}
 
