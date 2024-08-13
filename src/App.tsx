@@ -2,7 +2,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import theme from "./shared-library/theme";
 import Button from "@mui/material/Button";
-import { Stack, Typography,Grid, Paper } from "@mui/material";
+import { Stack, Typography,Grid } from "@mui/material";
 import "./App.css";
 
 
@@ -11,11 +11,6 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       {/*  all Header types  */}
-
-
-   
-
-
       <div style={{ padding: 20 }}>
       <Grid container spacing={2}>
         {/* First Column with 4 rows */}
