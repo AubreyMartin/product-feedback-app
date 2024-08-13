@@ -2,40 +2,61 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import theme from "./shared-library/theme";
 import Button from "@mui/material/Button";
-import { Stack, Typography } from "@mui/material";
+import { Stack, Typography,Grid, Paper } from "@mui/material";
 import "./App.css";
+
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-
-      {/* // the code starts here // */}
       {/*  all Header types  */}
-      <Typography variant="h1" className="typography-padding">
+
+
+   
+
+
+      <div style={{ padding: 20 }}>
+      <Grid container spacing={2}>
+        {/* First Column with 4 rows */}
+        <Grid item xs={6}>
+          <Grid container direction="column" spacing={2}>
+            <Grid item>
+            <Typography variant="h1" className="typography-padding">
         {" "}
         H1 - Jost Bold | 24px; 35px Line; -0.33 <br /> SpacingSed egestas ante
         et vulputate volutpat{" "}
       </Typography>
-      <Typography variant="h2" className="typography-padding">
+            </Grid>
+            <Grid item>
+            <Typography variant="h2" className="typography-padding">
         {" "}
         H2 - Jost Bold | 20px; 29px Line; -0.25 Spacing <br /> Vestibulum
         volutpat acus a ultrices sagittis{" "}
       </Typography>
-      <Typography variant="h3" className="typography-padding">
+            </Grid>
+            <Grid item>
+            <Typography variant="h3" className="typography-padding">
         {" "}
         H3 - Jost Bold | 18px; 26px Line; -0.25 Spacing <br /> Pellentesque a
         diam sit amet mi ullamcorper vehicula{" "}
       </Typography>
-      <Typography variant="h4" className="typography-padding">
+            </Grid>
+            <Grid item>
+            <Typography variant="h4" className="typography-padding">
         {" "}
         H4 - Jost Bold | 14px; 20px Line; -0.2 Spacing <br /> Ut scelerisque
         hendrerit tellus. Integer sagittis{" "}
       </Typography>
+            </Grid>
+          </Grid>
+        </Grid>
 
-      {/*  all Body types  */}
-
-      <Typography variant="body1" className="typography-padding">
+        {/* Second Column with 3 rows */}
+        <Grid item xs={6}>
+          <Grid container direction="column" spacing={2}>
+            <Grid item>
+            <Typography variant="body1" className="typography-padding">
         {" "}
         Body 1 - Jost Regular | 16px; 23px Line <br />
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
@@ -44,7 +65,9 @@ function App() {
         laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu
         nibh. Nullam mollis.{" "}
       </Typography>
-      <Typography variant="body2" className="typography-padding">
+            </Grid>
+            <Grid item>
+            <Typography variant="body2" className="typography-padding">
         {" "}
         Body 2 - Jost Regular | 15px; 22px Linee <br /> Sed egestas, ante et
         vulputate volutpat, eros pede semper est, vitae luctus metus libero eu
@@ -53,8 +76,9 @@ function App() {
         lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque
         euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu{" "}
       </Typography>
-
-      <Typography variant="body3" className="typography-padding">
+            </Grid>
+            <Grid item>
+            <Typography variant="body3" className="typography-padding">
         {" "}
         Body 3 - Jost Semibold | 13px; 19px Line <br /> Sed egestas, ante et
         vulputate volutpat, eros pede semper est, vitae luctus metus libero eu
@@ -66,8 +90,11 @@ function App() {
         ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget
         blandit nunc tortor eu nibh. Nullam mollis.{" "}
       </Typography>
-
-      {/* // the code starts here // */}
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+      </div>
 
       <Stack direction={"row"} gap={2} className="button-container">
         <Button variant="contained" color="primary">
@@ -86,6 +113,10 @@ function App() {
           Button 4
         </Button>
       </Stack>
+
+
+
+
     </ThemeProvider>
   );
 }
