@@ -1,1 +1,12 @@
- 
+.typography-padding {
+  padding: 20px 0; /* 20px padding on top and bottom */
+  border: 20px;
+  flex-wrap: 10px;
+  /* margin: 20px 10; */
+}
+.button-container {
+  margin: 20px 10; /* Adjust the margin value as needed */
+  border: 20px white solid;
+  padding: 20px 0; /* 20px padding on top and bottom */
+  flex-wrap: 10px;
+}
