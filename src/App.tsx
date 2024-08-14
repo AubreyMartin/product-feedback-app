@@ -16,7 +16,7 @@ const ColorTileGrid = () => {
               height: 100,
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
+              justifyContent: "bottom",
               backgroundColor: "#AD1FEA", color: "#FFFFFF",
             }}
           >
@@ -29,7 +29,7 @@ const ColorTileGrid = () => {
               height: 100,
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
+              justifyContent: "bottom",
               backgroundColor: "#4661E6",color: "#FFFFFF",
             }}
           >
@@ -42,7 +42,7 @@ const ColorTileGrid = () => {
               height: 100,
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
+              justifyContent: "bottom",
               backgroundColor: "#373F68",color: "#FFFFFF",
             }}
           >
@@ -70,7 +70,7 @@ const ColorTileGrid = () => {
               height: 100,
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
+              justifyContent: "bottom",
               backgroundColor: "#F2F4FF",color: "#647196",
             }}
           >
@@ -85,7 +85,7 @@ const ColorTileGrid = () => {
               height: 100,
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
+              justifyContent: "bottom",
               backgroundColor: "#F7F8FD",color: "#647196",
             }}
           >
@@ -100,7 +100,7 @@ const ColorTileGrid = () => {
               height: 100,
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
+              justifyContent: "bottom",
               backgroundColor: "#3A4374", color: "#FFFFFF",
             }}
           >
@@ -115,7 +115,7 @@ const ColorTileGrid = () => {
               height: 100,
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
+              justifyContent: "bottom",
               backgroundColor: "#647196", color: "#FFFFFF",
             }}
           >
@@ -131,7 +131,7 @@ const ColorTileGrid = () => {
               height: 100,
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
+              justifyContent: "bottom",
               backgroundColor: "#F49F85", color: "#FFFFFF",
             }}
           >
@@ -146,7 +146,7 @@ const ColorTileGrid = () => {
               height: 100,
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
+              justifyContent: "bottom",
               backgroundColor: "#62BCFA", color: "#FFFFFF",
             }}
           >
