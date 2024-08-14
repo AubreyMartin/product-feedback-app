@@ -95,9 +95,9 @@ const theme = createTheme({
     },
     body3: {
       fontWeight: 600, // Jost Semibold
-      fontSize: '13px',
-      lineHeight: '19px',
-      letterSpacing: 'normal',
+      fontSize: "13px",
+      lineHeight: "19px",
+      letterSpacing: "normal",
     },
   },
 
