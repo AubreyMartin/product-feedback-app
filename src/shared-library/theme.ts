@@ -1,6 +1,5 @@
 import { createTheme } from "@mui/material/styles";
 
-// Extend the Palette interface to include custom colors
 declare module "@mui/material/styles" {
   interface Palette {
     custom: {
@@ -27,13 +26,11 @@ declare module "@mui/material/styles" {
   }
 }
 
-// Extend TypographyPropsVariantOverrides to include body3
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
     body3: true;
   }
 }
-
 
 const theme = createTheme({
   palette: {
@@ -57,7 +54,6 @@ const theme = createTheme({
       accent: "#62BCFA", // Custom accent color
     },
   },
-
 
   typography: {
     fontFamily: "Jost, sans-serif",
@@ -97,7 +93,7 @@ const theme = createTheme({
       lineHeight: "22px",
       letterSpacing: "normal",
     },
-     body3: {
+    body3: {
       fontWeight: 600, // Jost Semibold
       fontSize: '13px',
       lineHeight: '19px',
@@ -111,8 +107,9 @@ const theme = createTheme({
         root: {
           borderRadius: 8,
           padding: "8px 16px",
-          textTransform: "none",}, },
-
+          textTransform: "none",
+        },
+      },
       variants: [
         {
           props: { variant: "contained", color: "primary" },
@@ -124,18 +121,16 @@ const theme = createTheme({
             },
           },
         },
-
         {
           props: { variant: "contained", color: "info" },
           style: {
-            backgroundColor: "#4661E6", // look at the figma for the exact colors
-            color: "#FFFFFF", // FFF since, our text is white
+            backgroundColor: "#4661E6",
+            color: "#FFFFFF",
             "&:hover": {
-              backgroundColor: "#7C91F9", // look at the figma for the exact colors
+              backgroundColor: "#7C91F9",
             },
           },
         },
-
         {
           props: { variant: "contained", color: "secondary" },
           style: {
@@ -146,7 +141,6 @@ const theme = createTheme({
             },
           },
         },
-
         {
           props: { variant: "contained", color: "error" },
           style: {
@@ -160,9 +154,6 @@ const theme = createTheme({
       ],
     },
   },
-
-
-
 });
 
 export default theme;
