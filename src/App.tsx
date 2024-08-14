@@ -17,7 +17,7 @@ const ColorTileGrid = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              backgroundColor: "#AD1FEA", 
+              backgroundColor: "#AD1FEA", color: "#FFFFFF",
             }}
           >
             Primary <br /> #AD1FEA
@@ -30,7 +30,7 @@ const ColorTileGrid = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              backgroundColor: "#4661E6",
+              backgroundColor: "#4661E6",color: "#FFFFFF",
             }}
           >
             Info <br /> #4661E6{" "}
@@ -43,7 +43,7 @@ const ColorTileGrid = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              backgroundColor: "#373F68",
+              backgroundColor: "#373F68",color: "#FFFFFF",
             }}
           >
             Secondary <br /> #373F68
@@ -55,8 +55,8 @@ const ColorTileGrid = () => {
               height: 100,
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
-              backgroundColor: "#FFFFFF",
+              justifyContent: "bottom",
+              backgroundColor: "#FFFFFF", color: "#647196",
             }}
           >
             White <br /> #FFFFFF
@@ -71,11 +71,11 @@ const ColorTileGrid = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              backgroundColor: "#ffeb3b",
+              backgroundColor: "#F2F4FF",color: "#647196",
             }}
           >
             
-              Primarylight <br /> #3A4374
+              Primarylight <br /> #F2F4FF
             
           </Paper>
         </Grid>
@@ -86,7 +86,7 @@ const ColorTileGrid = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              backgroundColor: "#F7F8FD",
+              backgroundColor: "#F7F8FD",color: "#647196",
             }}
           >
         
@@ -101,7 +101,7 @@ const ColorTileGrid = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              backgroundColor: "#3A4374",
+              backgroundColor: "#3A4374", color: "#FFFFFF",
             }}
           >
             
@@ -116,7 +116,7 @@ const ColorTileGrid = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              backgroundColor: "#647196",
+              backgroundColor: "#647196", color: "#FFFFFF",
             }}
           >
             
@@ -132,7 +132,7 @@ const ColorTileGrid = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              backgroundColor: "#F49F85",
+              backgroundColor: "#F49F85", color: "#FFFFFF",
             }}
           >
            
@@ -147,7 +147,7 @@ const ColorTileGrid = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              backgroundColor: "#62BCFA",
+              backgroundColor: "#62BCFA", color: "#FFFFFF",
             }}
           >
             
