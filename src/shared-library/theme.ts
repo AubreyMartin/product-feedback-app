@@ -1,16 +1,33 @@
-// src/theme/theme.ts
 import { createTheme } from "@mui/material/styles";
+
+// Extend the Palette interface to include custom colors
 declare module "@mui/material/styles" {
+  interface Palette {
+    custom: {
+      backgroundAlt: string;
+      gray: string;
+      accent: string;
+    };
+  }
+  interface PaletteOptions {
+    custom?: {
+      backgroundAlt?: string;
+      gray?: string;
+      accent?: string;
+    };
+  }
+
   interface TypographyVariants {
     body3: React.CSSProperties;
   }
 
-  // allow configuration using `createTheme`
+  // Allow configuration using `createTheme`
   interface TypographyVariantsOptions {
     body3?: React.CSSProperties;
   }
 }
 
+// Extend TypographyPropsVariantOverrides to include body3
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
     body3: true;
@@ -18,33 +35,27 @@ declare module "@mui/material/Typography" {
 }
 
 
-
-
 const theme = createTheme({
   palette: {
     primary: {
       main: "#AD1FEA", // Primary color
-      light: "#D73737", // Light primary color
+      light: "#F2F4FF", // Light primary color
     },
     info: {
       main: "#4661E6", // Info color
     },
     secondary: {
-      main: "#4661E6", // Secondary color
+      main: "#373F68", // Secondary color
       light: "#3A4374", // Light secondary color
-    },
-    backgroundAlt: {
-      main: "#F7F8FD", // Background alternative color
-    },
-    gray: {
-      main: "#647196", // Gray color
     },
     warning: {
       main: "#F49F85", // Warning color
     },
-    accent: {
-      main: "#62BCFA", // Accent color
-    }
+    custom: {
+      backgroundAlt: "#F7F8FD", // Custom background alternative color
+      gray: "#647196", // Custom gray color
+      accent: "#62BCFA", // Custom accent color
+    },
   },
 
 
