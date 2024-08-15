@@ -18,27 +18,25 @@ const ColorTileGrid = () => {
               display: "flex",
               alignItems: "flex-end",
               justifyContent: "flex-start",
-              backgroundColor: theme.palette.primary.main,
+              backgroundColor: theme.palette.primary.main, color: "#FFFFFF"
             }}
-          >
-            Primary main <br /> #AD1FEA
+          >Primary main <br /> #AD1FEA
           </Paper>
         </Grid>
 
         <Grid item xs={3}>
-          <Grid item xs={3}>
-            <Paper
-              sx={{
-                height: 100,
-                display: "flex",
-                alignItems: "flex-end",
-                justifyContent: "flex-start",
-                backgroundColor: theme.palette.info.main,
-              }}
-            >
-              Info <br /> #4661E6
-            </Paper>
-          </Grid>
+          <Paper
+            sx={{
+              height: 100,
+              display: "flex",
+              alignItems: "flex-end",
+              justifyContent: "flex-start",
+              backgroundColor: theme.palette.info.main, color: "#FFFFFF"
+            
+            }}
+          >
+            Info <br /> #373F68
+          </Paper>
         </Grid>
         <Grid item xs={3}>
           <Paper
@@ -80,8 +78,7 @@ const ColorTileGrid = () => {
               backgroundColor: "#F2F4FF",
               color: "#647196",
             }}
-          >
-            Primarylight <br /> #F2F4FF
+          > Primarylight <br /> #F2F4FF
           </Paper>
         </Grid>
         <Grid item xs={3}>
