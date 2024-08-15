@@ -1,7 +1,7 @@
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import theme from "./shared-library/theme";
-import { Button, Stack, Typography, Grid, Paper ,  } from "@mui/material";
+import { Button, Stack, Typography, Grid, Paper } from "@mui/material";
 import "./App.css";
 import { Box } from "@mui/system";
 
@@ -16,9 +16,9 @@ const ColorTileGrid = () => {
             sx={{
               height: 100,
               display: "flex",
-              alignItems: "end",
-              justifyContent: "flex-front",
-              backgroundColor:theme.palette.primary.main,
+              alignItems: "flex-end",
+              justifyContent: "flex-start",
+              backgroundColor: theme.palette.primary.main,
             }}
           >
             Primary main <br /> #AD1FEA
@@ -26,26 +26,29 @@ const ColorTileGrid = () => {
         </Grid>
 
         <Grid item xs={3}>
-          <Paper
-          sx={{
-              height: 100,
-              display: "flex",
-              alignItems: "end",
-              justifyContent: "flex-front",
-              backgroundColor:theme.palette.info,
-            }}
-          >
-            Info <br /> #4661E6{" "}
-          </Paper>
+          <Grid item xs={3}>
+            <Paper
+              sx={{
+                height: 100,
+                display: "flex",
+                alignItems: "flex-end",
+                justifyContent: "flex-start",
+                backgroundColor: theme.palette.info.main,
+              }}
+            >
+              Info <br /> #4661E6
+            </Paper>
+          </Grid>
         </Grid>
         <Grid item xs={3}>
           <Paper
             sx={{
               height: 100,
               display: "flex",
-              alignItems: "end",
-              justifyContent: "flex-front",
-              backgroundColor: theme.palette.secondary.main,color: "#FFFFFF",
+              alignItems: "flex-end",
+              justifyContent: "flex-start",
+              backgroundColor: theme.palette.secondary.main,
+              color: "#FFFFFF",
             }}
           >
             Secondary <br /> #373F68
@@ -56,9 +59,10 @@ const ColorTileGrid = () => {
             sx={{
               height: 100,
               display: "flex",
-              alignItems: "end",
-              justifyContent: "flex-front",
-              backgroundColor: theme.palette.custom.white, color: "#647196",
+              alignItems: "flex-end",
+              justifyContent: "flex-start",
+              backgroundColor: theme.palette.custom.white,
+              color: "#647196",
             }}
           >
             White <br /> #FFFFFF
@@ -71,14 +75,13 @@ const ColorTileGrid = () => {
             sx={{
               height: 100,
               display: "flex",
-              alignItems: "end",
-              justifyContent: "flex-front",
-              backgroundColor: "#F2F4FF",color: "#647196",
+              alignItems: "flex-end",
+              justifyContent: "flex-start",
+              backgroundColor: "#F2F4FF",
+              color: "#647196",
             }}
           >
-            
-              Primarylight <br /> #F2F4FF
-            
+            Primarylight <br /> #F2F4FF
           </Paper>
         </Grid>
         <Grid item xs={3}>
@@ -86,14 +89,13 @@ const ColorTileGrid = () => {
             sx={{
               height: 100,
               display: "flex",
-              alignItems: "end",
-              justifyContent: "flex-front",
-              backgroundColor: theme.palette.custom.backgroundAlt,color: "#647196",
+              alignItems: "flex-end",
+              justifyContent: "flex-start",
+              backgroundColor: theme.palette.custom.backgroundAlt,
+              color: "#647196",
             }}
           >
-        
-              BackgroundAlt <br /> #F7F8FD
-           
+            BackgroundAlt <br /> #F7F8FD
           </Paper>
         </Grid>
         <Grid item xs={3}>
@@ -101,14 +103,13 @@ const ColorTileGrid = () => {
             sx={{
               height: 100,
               display: "flex",
-              alignItems: "end",
-              justifyContent: "flex-front",
-              backgroundColor: theme.palette.secondary.light,color: "#FFFFFF",
+              alignItems: "flex-end",
+              justifyContent: "flex-start",
+              backgroundColor: theme.palette.secondary.light,
+              color: "#FFFFFF",
             }}
           >
-            
-              Secondarylight <br /> #3A4374
-           
+            Secondarylight <br /> #3A4374
           </Paper>
         </Grid>
         <Grid item xs={3}>
@@ -116,14 +117,13 @@ const ColorTileGrid = () => {
             sx={{
               height: 100,
               display: "flex",
-              alignItems: "end",
-              justifyContent: "flex-front",
-              backgroundColor: theme.palette.custom.gray,color: "#FFFFFF",
+              alignItems: "flex-end",
+              justifyContent: "flex-start",
+              backgroundColor: theme.palette.custom.gray,
+              color: "#FFFFFF",
             }}
           >
-            
-              Gray <br /> #647196
-           
+            Gray <br /> #647196
           </Paper>
         </Grid>
         {/* Row 3 */}
@@ -132,14 +132,13 @@ const ColorTileGrid = () => {
             sx={{
               height: 100,
               display: "flex",
-              alignItems: "end",
-              justifyContent: "flex-front",
-              backgroundColor: theme.palette.warning.main, color: "#FFFFFF",
+              alignItems: "flex-end",
+              justifyContent: "flex-start",
+              backgroundColor: theme.palette.warning.main,
+              color: "#FFFFFF",
             }}
           >
-           
-              Warning <br /> #F49F85
-           
+            Warning <br /> #F49F85
           </Paper>
         </Grid>
         <Grid item xs={3}>
@@ -147,14 +146,13 @@ const ColorTileGrid = () => {
             sx={{
               height: 100,
               display: "flex",
-              alignItems: "end",
-              justifyContent: "flex-front",
-              backgroundColor: theme.palette.custom.accent, color: "#FFFFFF",
+              alignItems: "flex-end",
+              justifyContent: "flex-start",
+              backgroundColor: theme.palette.custom.accent,
+              color: "#FFFFFF",
             }}
           >
-            
-              Accent <br /> #62BCFA
-            
+            Accent <br /> #62BCFA
           </Paper>
         </Grid>
       </Grid>
