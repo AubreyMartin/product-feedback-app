@@ -6,6 +6,7 @@ declare module "@mui/material/styles" {
       backgroundAlt: string;
       gray: string;
       accent: string;
+      white: string;
     };
   }
   interface PaletteOptions {
@@ -13,6 +14,7 @@ declare module "@mui/material/styles" {
       backgroundAlt?: string;
       gray?: string;
       accent?: string;
+      white: string;
     };
   }
 
@@ -52,6 +54,7 @@ const theme = createTheme({
       backgroundAlt: "#F7F8FD", // Custom background alternative color
       gray: "#647196", // Custom gray color
       accent: "#62BCFA", // Custom accent color
+      white: "#FFFFFF", // Custom white color
     },
   },
 

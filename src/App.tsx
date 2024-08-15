@@ -1,13 +1,14 @@
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import theme from "./shared-library/theme";
-import { Button, Stack, Typography, Grid, Paper } from "@mui/material";
+import { Button, Stack, Typography, Grid, Paper ,  } from "@mui/material";
 import "./App.css";
+import { Box } from "@mui/system";
 
 // ColorTileGrid Component
 const ColorTileGrid = () => {
   return (
-    <div style={{ padding: 20 }}>
+    <Box style={{ padding: 20 }}>
       <Grid container spacing={2}>
         {/* Row 1 */}
         <Grid item xs={3}>
@@ -15,22 +16,23 @@ const ColorTileGrid = () => {
             sx={{
               height: 100,
               display: "flex",
-              alignItems: "center",
-              justifyContent: "bottom",
-              backgroundColor: "#AD1FEA", color: "#FFFFFF",
+              alignItems: "end",
+              justifyContent: "flex-front",
+              backgroundColor:theme.palette.primary.main,
             }}
           >
-            Primary <br /> #AD1FEA
+            Primary main <br /> #AD1FEA
           </Paper>
         </Grid>
+
         <Grid item xs={3}>
           <Paper
-            style={{
+          sx={{
               height: 100,
               display: "flex",
-              alignItems: "center",
-              justifyContent: "bottom",
-              backgroundColor: "#4661E6",color: "#FFFFFF",
+              alignItems: "end",
+              justifyContent: "flex-front",
+              backgroundColor:theme.palette.info,
             }}
           >
             Info <br /> #4661E6{" "}
@@ -38,12 +40,12 @@ const ColorTileGrid = () => {
         </Grid>
         <Grid item xs={3}>
           <Paper
-            style={{
+            sx={{
               height: 100,
               display: "flex",
-              alignItems: "center",
-              justifyContent: "bottom",
-              backgroundColor: "#373F68",color: "#FFFFFF",
+              alignItems: "end",
+              justifyContent: "flex-front",
+              backgroundColor: theme.palette.secondary.main,color: "#FFFFFF",
             }}
           >
             Secondary <br /> #373F68
@@ -51,12 +53,12 @@ const ColorTileGrid = () => {
         </Grid>
         <Grid item xs={3}>
           <Paper
-            style={{
+            sx={{
               height: 100,
               display: "flex",
-              alignItems: "center",
-              justifyContent: "bottom",
-              backgroundColor: "#FFFFFF", color: "#647196",
+              alignItems: "end",
+              justifyContent: "flex-front",
+              backgroundColor: theme.palette.custom.white, color: "#647196",
             }}
           >
             White <br /> #FFFFFF
@@ -66,11 +68,11 @@ const ColorTileGrid = () => {
         {/* Row 2 */}
         <Grid item xs={3}>
           <Paper
-            style={{
+            sx={{
               height: 100,
               display: "flex",
-              alignItems: "center",
-              justifyContent: "bottom",
+              alignItems: "end",
+              justifyContent: "flex-front",
               backgroundColor: "#F2F4FF",color: "#647196",
             }}
           >
@@ -81,12 +83,12 @@ const ColorTileGrid = () => {
         </Grid>
         <Grid item xs={3}>
           <Paper
-            style={{
+            sx={{
               height: 100,
               display: "flex",
-              alignItems: "center",
-              justifyContent: "bottom",
-              backgroundColor: "#F7F8FD",color: "#647196",
+              alignItems: "end",
+              justifyContent: "flex-front",
+              backgroundColor: theme.palette.custom.backgroundAlt,color: "#647196",
             }}
           >
         
@@ -96,12 +98,12 @@ const ColorTileGrid = () => {
         </Grid>
         <Grid item xs={3}>
           <Paper
-            style={{
+            sx={{
               height: 100,
               display: "flex",
-              alignItems: "center",
-              justifyContent: "bottom",
-              backgroundColor: "#3A4374", color: "#FFFFFF",
+              alignItems: "end",
+              justifyContent: "flex-front",
+              backgroundColor: theme.palette.secondary.light,color: "#FFFFFF",
             }}
           >
             
@@ -111,12 +113,12 @@ const ColorTileGrid = () => {
         </Grid>
         <Grid item xs={3}>
           <Paper
-            style={{
+            sx={{
               height: 100,
               display: "flex",
-              alignItems: "center",
-              justifyContent: "bottom",
-              backgroundColor: "#647196", color: "#FFFFFF",
+              alignItems: "end",
+              justifyContent: "flex-front",
+              backgroundColor: theme.palette.custom.gray,color: "#FFFFFF",
             }}
           >
             
@@ -127,12 +129,12 @@ const ColorTileGrid = () => {
         {/* Row 3 */}
         <Grid item xs={3}>
           <Paper
-            style={{
+            sx={{
               height: 100,
               display: "flex",
-              alignItems: "center",
-              justifyContent: "bottom",
-              backgroundColor: "#F49F85", color: "#FFFFFF",
+              alignItems: "end",
+              justifyContent: "flex-front",
+              backgroundColor: theme.palette.warning.main, color: "#FFFFFF",
             }}
           >
            
@@ -142,12 +144,12 @@ const ColorTileGrid = () => {
         </Grid>
         <Grid item xs={3}>
           <Paper
-            style={{
+            sx={{
               height: 100,
               display: "flex",
-              alignItems: "center",
-              justifyContent: "bottom",
-              backgroundColor: "#62BCFA", color: "#FFFFFF",
+              alignItems: "end",
+              justifyContent: "flex-front",
+              backgroundColor: theme.palette.custom.accent, color: "#FFFFFF",
             }}
           >
             
@@ -156,7 +158,7 @@ const ColorTileGrid = () => {
           </Paper>
         </Grid>
       </Grid>
-    </div>
+    </Box>
   );
 };
 
@@ -168,7 +170,7 @@ function App() {
       <ColorTileGrid />
 
       {/* All Header Types */}
-      <div style={{ padding: 20 }}>
+      <Box style={{ padding: 20 }}>
         <Grid container spacing={2}>
           {/* First Column with 4 rows */}
           <Grid item xs={6}>
@@ -240,7 +242,7 @@ function App() {
             </Grid>
           </Grid>
         </Grid>
-      </div>
+      </Box>
 
       {/* Buttons */}
       <Stack direction={"row"} gap={2} className="button-container">
