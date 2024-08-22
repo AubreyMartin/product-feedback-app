@@ -1,7 +1,7 @@
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import theme from "./shared-library/theme";
-import { Button, Stack, Typography, Grid, Paper,Box } from "@mui/material";
+import { Button, Stack, Grid, Paper,Box } from "@mui/material";
 import "./App.css";
 
 
