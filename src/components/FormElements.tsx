@@ -1,4 +1,12 @@
-import { Box, Stack, TextField, Typography } from "@mui/material";
+import {
+  Box,
+  FormControl,
+  Stack,
+  TextField,
+  Typography
+} from "@mui/material";
+import ParentSelect from "./ParentSelect.tsx";
+
 
 const FormElements = () => {
   return (
@@ -36,6 +44,9 @@ const FormElements = () => {
                      helperText="Can't be empty"/>
         </Box>
       </Stack>
+      <FormControl sx={{ width: "250px" }} margin="normal" variant="outlined">
+        <ParentSelect/>
+      </FormControl>
     </Box>
   );
 };

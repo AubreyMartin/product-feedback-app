@@ -134,8 +134,16 @@ const theme = createTheme({
     MuiSelect: {
       styleOverrides: {
         root: {
+          backgroundColor: '#F7F8FD', // Background color
+          color: '#3A4374',
+          '& .MuiOutlinedInput-notchedOutline': {
+            border: 'none', // Remove the default border
+          },
           '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-            borderColor: '#4A00E0', // Border color for active dropdown
+            border: '1px solid #4A00E0', // Border color when focused
+          },
+          '& .MuiInputLabel-root': {
+            display: 'none', // Hide labels if not needed
           },
         },
         icon: {
@@ -154,12 +162,17 @@ const theme = createTheme({
     MuiMenuItem: {
       styleOverrides: {
         root: {
-          '&.Mui-selected': {
-            backgroundColor: '#4A00E0', // Background color for selected item
-            color: '#FFFFFF', // Text color for selected item
+          paddingTop: '12px', // Add your desired padding here
+          paddingBottom: '12px',
+          color: '#647196', // Default text color
+          backgroundColor: 'transparent', // Remove default background color
+          '&:hover': {
+            backgroundColor: 'transparent', // Remove background color on hover
+            color: '#AD1FEA', // Hover text color
           },
-          '&.Mui-selected:hover': {
-            backgroundColor: '#4A00E0', // Hover color for selected item
+          '&.Mui-selected': {
+            // color: '#AD1FEA', // Text color for selected item
+            backgroundColor: 'transparent', // Remove background color on hover
           },
         },
       },
