@@ -162,17 +162,26 @@ const theme = createTheme({
     MuiMenuItem: {
       styleOverrides: {
         root: {
-          paddingTop: '12px', // Add your desired padding here
+          paddingTop: '12px',
           paddingBottom: '12px',
           color: '#647196', // Default text color
-          backgroundColor: 'transparent', // Remove default background color
+          backgroundColor: 'transparent', // Ensure transparent background
           '&:hover': {
-            backgroundColor: 'transparent', // Remove background color on hover
+            backgroundColor: 'transparent', // Remove background on hover
             color: '#AD1FEA', // Hover text color
           },
           '&.Mui-selected': {
-            // color: '#AD1FEA', // Text color for selected item
-            backgroundColor: 'transparent', // Remove background color on hover
+            backgroundColor: 'transparent !important', // Force transparent background when selected
+            color: '#AD1FEA', // Selected text color (optional)
+          },
+          '&.Mui-focusVisible': {
+            backgroundColor: 'transparent !important', // Remove background on focus
+          },
+          '&:focus': {
+            backgroundColor: 'transparent !important', // Ensure no background on focus
+          },
+          '&:active': {
+            backgroundColor: 'transparent !important', // Remove background when active
           },
         },
       },
