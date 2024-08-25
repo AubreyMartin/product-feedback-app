@@ -9,6 +9,7 @@ declare module "@mui/material/styles" {
       white: string;
     };
   }
+
   interface PaletteOptions {
     custom?: {
       backgroundAlt?: string;
@@ -105,6 +106,64 @@ const theme = createTheme({
   },
 
   components: {
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          '& .MuiOutlinedInput-notchedOutline': {
+            border: 'none', // Remove the default outline border
+          },
+          '& .MuiInputBase-root': {
+            color: '#3A4374',
+            backgroundColor: '#F7F8FD',
+            border: '1px solid transparent', // Reserve space for the border but make it transparent
+            transition: 'border-color 0.3s', // Smooth transition for border color
+            '&.Mui-focused': {
+              borderColor: '#4A00E0', // Show border on focus
+            },
+            '&.Mui-error': {
+              borderColor: '#D73737', // Show border on error
+            },
+          },
+          '& .MuiInputLabel-root': {
+            display: 'none', // Hide labels if not needed
+          },
+        },
+      },
+
+    },
+    MuiSelect: {
+      styleOverrides: {
+        root: {
+          '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+            borderColor: '#4A00E0', // Border color for active dropdown
+          },
+        },
+        icon: {
+          color: '#4A00E0', // Icon color for dropdown arrow
+        },
+      },
+    },
+    MuiMenu: {
+      styleOverrides: {
+        paper: {
+          borderRadius: 4, // Dropdown menu border radius
+          boxShadow: '0px 2px 8px rgba(0, 0, 0, 0.1)', // Shadow for dropdown menu
+        },
+      },
+    },
+    MuiMenuItem: {
+      styleOverrides: {
+        root: {
+          '&.Mui-selected': {
+            backgroundColor: '#4A00E0', // Background color for selected item
+            color: '#FFFFFF', // Text color for selected item
+          },
+          '&.Mui-selected:hover': {
+            backgroundColor: '#4A00E0', // Hover color for selected item
+          },
+        },
+      },
+    },
     MuiButton: {
       styleOverrides: {
         root: {

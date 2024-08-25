@@ -3,6 +3,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import theme from "./shared-library/theme";
 import { Button, Stack, Typography, Grid, Paper,Box } from "@mui/material";
 import "./App.css";
+import FormElements from "./components/FormElements.tsx";
 
 
 // ColorTileGrid Component
@@ -254,6 +255,9 @@ function App() {
           Button 4
         </Button>
       </Stack>
+      <Box sx={{padding: "20px"}}>
+        <FormElements />
+      </Box>
     </ThemeProvider>
   );
 }
