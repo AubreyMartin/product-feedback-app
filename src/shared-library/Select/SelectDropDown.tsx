@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MenuItem, Select, SelectChangeEvent } from '@mui/material';
+import { Box, MenuItem, Select, SelectChangeEvent } from '@mui/material';
 
 interface Option {
   value: string;
@@ -18,6 +18,14 @@ const CheckIcon = () => (
   </svg>
 );
 
+const DropdownArrowIcon = () => {
+  return <Box sx={{ display: 'flex', alignItems: 'center', paddingRight: '24px' }}>
+    <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L5 5L9 1" stroke="#4661E6" strokeWidth="2"/>
+    </svg>
+  </Box>
+};
+
 const SelectDropDown: React.FC<SelectDropDownProps> = ({ options, selectedValue, onChange }) => {
   const [open, setOpen] = useState<boolean>(false);
 
@@ -32,12 +40,18 @@ const SelectDropDown: React.FC<SelectDropDownProps> = ({ options, selectedValue,
       onChange={handleChange}
       onOpen={() => setOpen(true)}
       onClose={() => setOpen(false)}
+      IconComponent={DropdownArrowIcon}
       renderValue={(selected) => options.find(option => option.value === selected)?.label || ''}
     >
       {options.map((option, index) => (
-        <MenuItem key={option.value} value={option.value} sx={{ justifyContent: 'space-between' }} divider={index !== options.length - 1}>
+        <MenuItem
+          key={option.value}
+          value={option.value}
+          sx={{ justifyContent: 'space-between' }}
+          divider={index !== options.length - 1}
+        >
           {option.label}
-          {open && selectedValue === option.value && <CheckIcon />}
+          {open && selectedValue === option.value && <CheckIcon/>}
         </MenuItem>
       ))}
     </Select>
