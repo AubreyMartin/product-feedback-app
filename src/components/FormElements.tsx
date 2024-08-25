@@ -35,20 +35,7 @@ const FormElements = () => {
           <TextField sx={{ mt: '.5rem' }} variant="outlined" fullWidth margin="normal" error
                      helperText="Can't be empty"/>
         </Box>
-
-
       </Stack>
-
-      {/*<FormControl sx={{ width: "250px" }} margin="normal" variant="outlined">*/}
-      {/*  <InputLabel>Feature</InputLabel>*/}
-      {/*  <Select defaultValue="">*/}
-      {/*    <MenuItem value="Feature">Feature</MenuItem>*/}
-      {/*    <MenuItem value="UI">UI</MenuItem>*/}
-      {/*    <MenuItem value="UX">UX</MenuItem>*/}
-      {/*    <MenuItem value="Enhancement">Enhancement</MenuItem>*/}
-      {/*    <MenuItem value="Bug">Bug</MenuItem>*/}
-      {/*  </Select>*/}
-      {/*</FormControl>*/}
     </Box>
   );
 };
