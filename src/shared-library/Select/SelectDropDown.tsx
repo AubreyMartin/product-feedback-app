@@ -32,7 +32,6 @@ const SelectDropDown: React.FC<SelectDropDownProps> = ({ options, selectedValue,
   const handleChange = (event: SelectChangeEvent<string>) => {
     onChange(event.target.value);
   };
-
   return (
     <Select
       id="select-id"

@@ -1,6 +1,5 @@
 import {
   Box,
-  FormControl,
   Stack,
   TextField,
   Typography
@@ -12,7 +11,8 @@ const FormElements = () => {
   return (
     <Box>
       <Typography variant="body1" color="textSecondary"> 05 FORM ELEMENTS</Typography>
-      <Stack spacing={2} direction="row" alignItems="center" justifyContent="center" sx={{ mt: 4 }}>
+      <Stack spacing={2} direction={{ xs: 'column', sm: 'row' }} alignItems="center" justifyContent="center"
+             sx={{ mt: 4 }}>
         <Box sx={{ width: "300px", height: "100px" }}>
           <Typography variant="body2" textAlign="center" color="textSecondary">
             Text Field - Default
@@ -44,9 +44,7 @@ const FormElements = () => {
                      helperText="Can't be empty"/>
         </Box>
       </Stack>
-      <FormControl sx={{ width: "250px" }} margin="normal" variant="outlined">
-        <ParentSelect/>
-      </FormControl>
+      <ParentSelect/>
     </Box>
   );
 };

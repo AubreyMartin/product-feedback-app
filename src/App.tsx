@@ -255,7 +255,7 @@ function App() {
           Button 4
         </Button>
       </Stack>
-      <Box sx={{padding: "20px"}}>
+      <Box sx={{padding: "20px", mb: 40}}>
         <FormElements />
       </Box>
     </ThemeProvider>

@@ -134,6 +134,7 @@ const theme = createTheme({
     MuiSelect: {
       styleOverrides: {
         root: {
+          minWidth: "300px",
           backgroundColor: '#F7F8FD', // Background color
           color: '#3A4374',
           '& .MuiOutlinedInput-notchedOutline': {
