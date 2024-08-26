@@ -6,22 +6,14 @@ import Button from '@mui/material/Button';
 import Typography  from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import { Palette } from "../shared-library/theme/Palette"
-import { padding } from '@mui/system';
-import { Theme } from "../shared-library/theme";
 
+// Define an interface for MediaCard props
+interface MediaCardProps {
+    title: string;
+    description: string;
+  }
 
-
-// MediaCard Component
-{/* <Box> <Typography variant="body1" color="textSecondary">
-{" "}
-01 Mobile - Suggestions
-</Typography> 
-</Box> */}
-
-
-
-const MediaCard = ({ title, description, }) => (
+const MediaCard: React.FC<MediaCardProps> = ({ title, description, }) => (
 
   <Card
   className="Suggestion Card"
