@@ -1,15 +1,17 @@
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import theme from "./shared-library/theme";
-import { Button, Stack, Typography, Grid, Paper,Box } from "@mui/material";
+import { Button, Stack, Typography, Grid, Paper, Box } from "@mui/material";
 import "./App.css";
 import FormElements from "./components/FormElements.tsx";
-
+import Suggestions from "../src/Pages/Suggestion.tsx"
 
 // ColorTileGrid Component
+
 const ColorTileGrid = () => {
   return (
-    <Box style={{ padding: 20 }}>
+    
+    <Box style={{ padding: 20  }}>
       <Grid container spacing={2}>
         {/* Row 1 */}
         <Grid item xs={3}>
@@ -19,9 +21,11 @@ const ColorTileGrid = () => {
               display: "flex",
               alignItems: "flex-end",
               justifyContent: "flex-start",
-              backgroundColor: theme.palette.primary.main, color: "#FFFFFF"
+              backgroundColor: theme.palette.primary.main,
+              color: "#FFFFFF",
             }}
-          >Primary main <br /> #AD1FEA
+          >
+            Primary main <br /> #AD1FEA
           </Paper>
         </Grid>
 
@@ -32,8 +36,8 @@ const ColorTileGrid = () => {
               display: "flex",
               alignItems: "flex-end",
               justifyContent: "flex-start",
-              backgroundColor: theme.palette.info.main, color: "#FFFFFF"
-            
+              backgroundColor: theme.palette.info.main,
+              color: "#FFFFFF",
             }}
           >
             Info <br /> #373F68
@@ -79,7 +83,9 @@ const ColorTileGrid = () => {
               backgroundColor: "#F2F4FF",
               color: "#647196",
             }}
-          > Primarylight <br /> #F2F4FF
+          >
+            {" "}
+            Primarylight <br /> #F2F4FF
           </Paper>
         </Grid>
         <Grid item xs={3}>
@@ -255,11 +261,25 @@ function App() {
           Button 4
         </Button>
       </Stack>
-      <Box sx={{padding: "20px", mb: 40}}>
+
+      {/* Form-Elements */}
+      <Box sx={{ padding: "20px", mb: 40 }}>
         <FormElements />
       </Box>
+
+
+      {/* Mobile - Suggestions */}
+      <Box sx={{ padding: "20px", mb: 40 , backgroundColor: "custom.backgroundAlt" }}>
+        <Suggestions />
+
+        </Box>
+      
+
+
     </ThemeProvider>
   );
 }
+
+
 
 export default App;
