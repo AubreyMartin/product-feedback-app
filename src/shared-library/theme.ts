@@ -109,46 +109,45 @@ const theme = createTheme({
     MuiTextField: {
       styleOverrides: {
         root: {
-          '& .MuiOutlinedInput-notchedOutline': {
-            border: 'none', // Remove the default outline border
+          "& .MuiOutlinedInput-notchedOutline": {
+            border: "none", // Remove the default outline border
           },
-          '& .MuiInputBase-root': {
-            color: '#3A4374',
-            backgroundColor: '#F7F8FD',
-            border: '1px solid transparent', // Reserve space for the border but make it transparent
-            transition: 'border-color 0.3s', // Smooth transition for border color
-            '&.Mui-focused': {
-              borderColor: '#4A00E0', // Show border on focus
+          "& .MuiInputBase-root": {
+            color: "#3A4374",
+            backgroundColor: "#F7F8FD",
+            border: "1px solid transparent", // Reserve space for the border but make it transparent
+            transition: "border-color 0.3s", // Smooth transition for border color
+            "&.Mui-focused": {
+              borderColor: "#4A00E0", // Show border on focus
             },
-            '&.Mui-error': {
-              borderColor: '#D73737', // Show border on error
+            "&.Mui-error": {
+              borderColor: "#D73737", // Show border on error
             },
           },
-          '& .MuiInputLabel-root': {
-            display: 'none', // Hide labels if not needed
+          "& .MuiInputLabel-root": {
+            display: "none", // Hide labels if not needed
           },
         },
       },
-
     },
     MuiSelect: {
       styleOverrides: {
         root: {
           minWidth: "300px",
-          backgroundColor: '#F7F8FD', // Background color
-          color: '#3A4374',
-          '& .MuiOutlinedInput-notchedOutline': {
-            border: 'none', // Remove the default border
+          backgroundColor: "#F7F8FD", // Background color
+          color: "#3A4374",
+          "& .MuiOutlinedInput-notchedOutline": {
+            border: "none", // Remove the default border
           },
-          '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-            border: '1px solid #4A00E0', // Border color when focused
+          "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+            border: "1px solid #4A00E0", // Border color when focused
           },
-          '& .MuiInputLabel-root': {
-            display: 'none', // Hide labels if not needed
+          "& .MuiInputLabel-root": {
+            display: "none", // Hide labels if not needed
           },
         },
         icon: {
-          color: '#4A00E0', // Icon color for dropdown arrow
+          color: "#4A00E0", // Icon color for dropdown arrow
         },
       },
     },
@@ -156,33 +155,33 @@ const theme = createTheme({
       styleOverrides: {
         paper: {
           borderRadius: 4, // Dropdown menu border radius
-          boxShadow: '0px 2px 8px rgba(0, 0, 0, 0.1)', // Shadow for dropdown menu
+          boxShadow: "0px 2px 8px rgba(0, 0, 0, 0.1)", // Shadow for dropdown menu
         },
       },
     },
     MuiMenuItem: {
       styleOverrides: {
         root: {
-          paddingTop: '12px',
-          paddingBottom: '12px',
-          color: '#647196', // Default text color
-          backgroundColor: 'transparent', // Ensure transparent background
-          '&:hover': {
-            backgroundColor: 'transparent', // Remove background on hover
-            color: '#AD1FEA', // Hover text color
+          paddingTop: "12px",
+          paddingBottom: "12px",
+          color: "#647196", // Default text color
+          backgroundColor: "transparent", // Ensure transparent background
+          "&:hover": {
+            backgroundColor: "transparent", // Remove background on hover
+            color: "#AD1FEA", // Hover text color
           },
-          '&.Mui-selected': {
-            backgroundColor: 'transparent !important', // Force transparent background when selected
-            color: '#AD1FEA', // Selected text color (optional)
+          "&.Mui-selected": {
+            backgroundColor: "transparent !important", // Force transparent background when selected
+            color: "#AD1FEA", // Selected text color (optional)
           },
-          '&.Mui-focusVisible': {
-            backgroundColor: 'transparent !important', // Remove background on focus
+          "&.Mui-focusVisible": {
+            backgroundColor: "transparent !important", // Remove background on focus
           },
-          '&:focus': {
-            backgroundColor: 'transparent !important', // Ensure no background on focus
+          "&:focus": {
+            backgroundColor: "transparent !important", // Ensure no background on focus
           },
-          '&:active': {
-            backgroundColor: 'transparent !important', // Remove background when active
+          "&:active": {
+            backgroundColor: "transparent !important", // Remove background when active
           },
         },
       },
