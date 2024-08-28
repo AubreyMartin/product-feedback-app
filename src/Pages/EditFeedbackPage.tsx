@@ -5,7 +5,7 @@ import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
 import { useState,  } from "react";
 import SelectDropDown from "../shared-library/Select/SelectDropDown.tsx";
-import AddIcon from '@mui/icons-material/Add';
+
 
 
 const MyCardComponent = () => {
@@ -258,7 +258,7 @@ const MyCardComponent = () => {
                       minWidth: '279px', maxWidth: '279px',  
                       marginTop: '0px',marginBottom: '0px',  
                       marginRight: '0px', marginLeft: '0px', }} > 
-            <TextField  variant="outlined"  fullWidth multiline  fontSize="13px"  placeholder= "It would help people with light sensitivities and who prefer dark mode. " sx={{
+            <TextField  variant="outlined"  fullWidth multiline    placeholder= "It would help people with light sensitivities and who prefer dark mode. " sx={{
              width: '279px',height: '120px', '& .MuiOutlinedInput-root': {  height: '100%', fontSize:"13px", textAlign: "start" }, // Ensures the input field takes the full height
             }}/> 
             </Box>
