@@ -7,6 +7,8 @@ import FormElements from "./components/FormElements.tsx";
 import Suggestions from "../src/Pages/Suggestion.tsx";
 import SuggestionsEmpty from "../src/Pages/SuggestionsEmpty.tsx";
 import NewFeedbackPage from "../src/Pages/NewFeedbackPage.tsx";
+import EditFeedbackPage from "../src/Pages/EditFeedbackPage.tsx"
+import { margin } from "@mui/system";
 
 // ColorTileGrid Component
 
@@ -295,9 +297,17 @@ function App() {
         sx={{ padding: "20px", mb: 40 ,
           backgroundColor: "custom.backgroundAlt",
           
-        }}
-      >
-        <NewFeedbackPage />
+        }}>
+
+       <NewFeedbackPage />
+
+
+       <Box sx ={{ marginBottom:'20px', mb: 40}}>
+       < EditFeedbackPage/>
+       </Box>
+       
+
+
       </Box>
     </ThemeProvider>
   );
