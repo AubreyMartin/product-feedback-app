@@ -4,14 +4,14 @@ import theme from "./shared-library/theme";
 import { Button, Stack, Typography, Grid, Paper, Box } from "@mui/material";
 import "./App.css";
 import FormElements from "./components/FormElements.tsx";
-import Suggestions from "../src/Pages/Suggestion.tsx"
+import Suggestions from "../src/Pages/Suggestion.tsx";
+import SuggestionsEmpty from "../src/Pages/SuggestionsEmpty.tsx";
 
 // ColorTileGrid Component
 
 const ColorTileGrid = () => {
   return (
-    
-    <Box style={{ padding: 20  }}>
+    <Box style={{ padding: 20 }}>
       <Grid container spacing={2}>
         {/* Row 1 */}
         <Grid item xs={3}>
@@ -267,19 +267,27 @@ function App() {
         <FormElements />
       </Box>
 
-
       {/* Mobile - Suggestions */}
-      <Box sx={{ padding: "20px", mb: 40 , backgroundColor: "custom.backgroundAlt" }}>
+      <Box
+        sx={{
+          padding: "20px",
+          backgroundColor: "custom.backgroundAlt",
+        }}
+      >
         <Suggestions />
+      </Box>
 
-        </Box>
-      
-
-
+      {/* Mobile - Suggestions-Empty */}
+      <Box
+        sx={{ padding: "20px", mb: 40 ,
+          backgroundColor: "custom.backgroundAlt",
+          
+        }}
+      >
+        <SuggestionsEmpty />
+      </Box>
     </ThemeProvider>
   );
 }
-
-
 
 export default App;
