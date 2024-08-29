@@ -6,6 +6,9 @@ import "./App.css";
 import FormElements from "./components/FormElements.tsx";
 import Suggestions from "../src/Pages/Suggestion.tsx";
 import SuggestionsEmpty from "../src/Pages/SuggestionsEmpty.tsx";
+import NewFeedbackPage from "../src/Pages/NewFeedbackPage.tsx";
+import EditFeedbackPage from "../src/Pages/EditFeedbackPage.tsx"
+
 
 // ColorTileGrid Component
 
@@ -285,6 +288,26 @@ function App() {
         }}
       >
         <SuggestionsEmpty />
+      </Box>
+
+
+
+      {/* Mobile - New-Feedback-Page */}
+      <Box
+        sx={{ padding: "20px", mb: 40 ,
+          backgroundColor: "custom.backgroundAlt",
+          
+        }}>
+
+       <NewFeedbackPage />
+
+
+       <Box sx ={{ marginBottom:'20px', mb: 40}}>
+       < EditFeedbackPage/>
+       </Box>
+       
+
+
       </Box>
     </ThemeProvider>
   );
