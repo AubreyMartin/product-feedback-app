@@ -291,7 +291,7 @@ const MyCardComponent = () => {
             <Button sx={{minHeight: 40,maxHeight: 40,
                      minWidth: 279,maxWidth: 279, 
                      marginTop: '',marginBottom: '', marginLeft:'0px',
-                     backgroundColor: "red",color: '#F2F4FE', padding: '10px' }}> Delete</Button>
+                     backgroundColor: "#D73737",color: '#F2F4FE', padding: '10px' }}> Delete</Button>
 
 
 
