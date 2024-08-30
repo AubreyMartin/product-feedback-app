@@ -7,7 +7,6 @@ import {
   CardActions,
   TextField
 } from "@mui/material";
-import { margin } from "@mui/system";
 
 const MyCardComponent = () => {
   const cardData = [
