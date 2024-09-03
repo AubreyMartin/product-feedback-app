@@ -4,56 +4,116 @@ import {
   CardContent,
   Box,
   Button,
-  CardActions,
-  TextField,
-} from "@mui/material";
+  CardActions,} from "@mui/material";
+import { padding } from "@mui/system";
 
 const MyCardComponent = () => {
   const cardData = [
     {
-      title: "Add a dark theme option",
+      title: "One-click portfolio generation",
       description:
-        "It would help people with light sensitivities and who prefer dark mode.",
+        "Add ability to create professional looking portfolio from profile.",
+    },
+    {
+      title: "Bookmark challenges",
+      description: "Be able to bookmark challenges to take later on.",
+    },
+    {
+      title: "Animated solution screenshots",
+      description:
+        "Screenshots of solutions with animations don't display content.",
     },
   ];
 
   return (
-    <Box
-      sx={{
-        minHeight: 1495,
-        maxWidth: 375,
-        margin: "20px auto 0",
-      }}
-    >
-      {/* Page title */}
-      <Typography variant="body1" color="textSecondary">
-        05 Feedback Detail Page
+    <Box sx={{ minHeight: '930px', maxHeight: '930px', maxWidth: 327, minWidth: 327, margin: "20px", }}>
+      <Typography  >
+        06 Roadmap Page
       </Typography>
+      <Box  sx={{ 
+minHeight: '100px',maxHeight: '100px',  
+minWidth: '375px', maxWidth: '375px',  
+paddingTop: '50px',paddingBottom: '30px',  
+marginRight: '0px', marginLeft: '0px', 
+background: '#373F68',color: "white",
 
-      {/* Card 1 */}
+}}>
+        <Typography variant="h2" sx={{padding: '10px'}}>
+          Roadmap
+        </Typography>
+
+
+
+      </Box>
+
+      <Box sx={{ 
+minHeight: '49px',maxHeight: '49px',  
+minWidth: '280.5px', maxWidth: '280.5px',  
+paddingTop: '20px',paddingBottom: '20px',  
+marginRight: '0px', marginLeft: '0px', 
+background: '0px',
+
+}} > <Typography variant="h2" color="secondary.light"> In-Progress (3)
+
+</Typography>
+<Typography
+color="textSecondary"
+fontFamily="Jost, sans-serif"
+fontSize={13}
+sx={{ marginTop: 1 }}
+> Features currently being developed
+
+</Typography>
+
+
+      
       {cardData.map((card, index) => (
-        <Box key={index} sx={{ margin: "20px 0" }}>
+        <Box key={index} sx={{ marginBottom: "10px" }}>
           <Card
             sx={{
-              backgroundColor: "white",
               borderRadius: 2,
-              padding: 2,
-              maxWidth: 327,
-              margin: "0 auto",
+              padding: '0px',
+              borderTop: "5px solid",
+              borderColor: "primary.main",  minHeight: '233px',maxHeight: '233px',
+              minWidth: '327px', maxWidth: '327px',
             }}
           >
             <CardContent>
+              <Box display="flex" alignItems="center">
+                <Box
+                  sx={{   
+                    width: "8px",
+                    height: "8px",
+                    borderRadius: "50%",
+                    backgroundColor: "primary.main", // Uses theme color for the dot
+                    marginRight: "10px", // Space between dot and text
+                  }}
+                />
+                <Typography variant="body2">In Progress</Typography>
+              </Box>
+                <Box sx={{ 
+minHeight: '66px',maxHeight: '66px',  
+minWidth: '278px', maxWidth: '278px',  
+marginTop: 'px',marginBottom: '0px',  
+marginRight: '0px', marginLeft: '0px', 
+background: '0px',
+
+}}>
+
               <Typography variant="h4" color="secondary.light">
                 {card.title}
               </Typography>
               <Typography
-                color="custom.gray"
+                color="textSecondary"
                 fontFamily="Jost, sans-serif"
                 fontSize={13}
-                sx={{ marginTop: 2 }}
+                sx={{ marginTop: 1 }}
               >
                 {card.description}
               </Typography>
+              </Box>
+
+
             </CardContent>
             <CardActions sx={{ flexDirection: "column", padding: 2 }}>
               <Button
@@ -153,87 +213,11 @@ const MyCardComponent = () => {
               </Box>
             </CardActions>
           </Card>
-
-          {/* Comment Card */}
-          <Card
-            sx={{
-              height: 837,
-              maxWidth: 327,
-              margin: "24px auto 0",
-              borderRadius: 2,
-              backgroundColor: "blue",
-              padding: "24px",
-            }}
-          >
-            {/* Add content here if needed */}
-          </Card>
-
-          {/* Add Comment Card */}
-          <Card
-            sx={{
-              height: 234,
-              maxWidth: 327,
-              margin: "24px auto 0",
-              borderRadius: 2,
-              backgroundColor: "white",
-              padding: 3,
-            }}
-          >
-            <Box sx={{ backgroundColor: "white", padding: 0 }}>
-              <Typography variant="h3" fontSize={18}>
-                Add comment
-              </Typography>
-
-              <Box sx={{ marginTop: 3 }}>
-                <TextField
-                  variant="outlined"
-                  fullWidth
-                  multiline
-                  placeholder="Type your comment here."
-                  sx={{
-                    maxWidth: "279px",
-                    minWidth: "279px",
-                    maxHeight: "80px",
-                    minHeight: "80px",
-                    "& .MuiOutlinedInput-root": {
-                      fontSize: 13,
-                      textAlign: "start",
-                    },
-                  }}
-                />
-              </Box>
-
-              <CardActions
-                sx={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  padding: "2px",
-                  marginTop: 2,
-                  maxWidth: "278px",
-                  minWidth: "278px",
-                  maxHeight: "40px",
-                  minHeight: "40px",
-                }}
-              >
-                <Typography fontSize={13} sx={{ marginRight: "53px" }}>
-                  250 Characters left
-                </Typography>
-                <Button
-                  sx={{
-                    width: 119,
-                    height: 40,
-                    backgroundColor: "primary.main",
-                    color: "#F2F4FE",
-                  }}
-                >
-                  Post Comment
-                </Button>
-              </CardActions>
-            </Box>
-          </Card>
         </Box>
       ))}
+
+
+    </Box>
     </Box>
   );
 };

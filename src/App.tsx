@@ -9,6 +9,7 @@ import SuggestionsEmpty from "../src/Pages/SuggestionsEmpty.tsx";
 import NewFeedbackPage from "../src/Pages/NewFeedbackPage.tsx";
 import EditFeedbackPage from "../src/Pages/EditFeedbackPage.tsx";
 import FeedbackDetailPage from "../src/Pages/FeedbackDetailPage.tsx";
+import RoadmapPage from "../src/Pages/RoadmapPage.tsx";
 
 // ColorTileGrid Component
 
@@ -314,6 +315,16 @@ function App() {
         }}
       >
         <FeedbackDetailPage />
+      </Box>
+
+      <Box
+        sx={{
+          marginBottom: "20px",
+          mb: 40,
+          backgroundColor: "custom.backgroundAlt",
+        }}
+      >
+        <RoadmapPage />
       </Box>
     </ThemeProvider>
   );
