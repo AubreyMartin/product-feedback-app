@@ -5,7 +5,6 @@ import {
   Box,
   Button,
   CardActions,} from "@mui/material";
-import { padding } from "@mui/system";
 
 const MyCardComponent = () => {
   const cardData = [
