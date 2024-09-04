@@ -1,6 +1,6 @@
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
-import { Box, maxWidth, padding } from "@mui/system";
+import { Box,  } from "@mui/system";
 import { CardContent } from "@mui/material";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
