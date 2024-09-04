@@ -12,7 +12,6 @@ import FeedbackDetailPage from "./Pages1/Mobile/FeedbackDetailPage.tsx";
 import RoadmapPage from "./Pages1/Mobile/RoadmapPage.tsx";
 import TabletSuggestionsEmpty from "../src/Pages1/Tablet/TabletSuggestionsEmpty.tsx";
 
-
 // ColorTileGrid Component
 
 const ColorTileGrid = () => {
@@ -331,18 +330,9 @@ function App() {
 
       <Box>
         <Box>
-        <TabletSuggestionsEmpty/>
-
-
-
+          <TabletSuggestionsEmpty />
         </Box>
-
-
-
-
       </Box>
-
-
     </ThemeProvider>
   );
 }
