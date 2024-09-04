@@ -4,7 +4,8 @@ import { CardContent, Box, TextField } from "@mui/material";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 import { useState } from "react";
-import SelectDropDown from "../shared-library/Select/SelectDropDown.tsx";
+import SelectDropDown from "../../shared-library/Select/SelectDropDown.tsx";
+import AddIcon from "@mui/icons-material/Add";
 
 const MyCardComponent = () => {
   const [featureOption, setFeatureOption] = useState<string>("");
@@ -21,7 +22,7 @@ const MyCardComponent = () => {
     <Box>
       <Typography variant="body1" color="textSecondary">
         {" "}
-        04 Edit Feedback Page
+        03 New Feedback Page
       </Typography>
 
       {/* Card  */}
@@ -29,30 +30,39 @@ const MyCardComponent = () => {
         className="SuggestionsEmpty"
         sx={{
           backgroundColor: "white",
-          minHeight: 893,
-          maxHeight: 893,
+          minHeight: 708,
+          maxHeight: 708,
           minWidth: 327,
           maxWidth: 327,
           borderRadius: "10px",
         }}
       >
-        {/* <Button
-      variant="contained"
-      sx={{
-        backgroundColor: 'red',
-        borderRadius: '50%',
-        minWidth: '40px',
-        minHeight: '40px',
-        padding: '10px',
-        marginRight: '24px',marginLeft: '24px', 
-        marginTop: '0px',marginBottom: '0px',
-        '&:hover': {
-          backgroundColor: 'darkred',
-        }
-      }}
-    >
-      <AddIcon style={{ color: 'white' ,marginTop: '0px',marginBottom: '0px',padding:'0px' }} />
-    </Button> */}
+        <Button
+          variant="contained"
+          sx={{
+            backgroundColor: "red",
+            borderRadius: "50%",
+            minWidth: "40px",
+            minHeight: "40px",
+            padding: "10px",
+            marginRight: "24px",
+            marginLeft: "24px",
+            marginTop: "0px",
+            marginBottom: "0px",
+            "&:hover": {
+              backgroundColor: "darkred",
+            },
+          }}
+        >
+          <AddIcon
+            style={{
+              color: "white",
+              marginTop: "0px",
+              marginBottom: "0px",
+              padding: "0px",
+            }}
+          />
+        </Button>
 
         <CardContent
           sx={{
@@ -76,7 +86,7 @@ const MyCardComponent = () => {
             }}
           >
             <Typography variant="h1" fontSize={18} color="textSecondary">
-              Editing ‘Add a dark theme option’
+              Create New Feedback
             </Typography>
           </Box>
 
@@ -146,11 +156,7 @@ const MyCardComponent = () => {
                 marginLeft: "0px",
               }}
             >
-              <TextField
-                variant="outlined"
-                fullWidth
-                placeholder="Add a dark theme option"
-              />
+              <TextField variant="outlined" fullWidth />
             </Box>
           </Box>
 
@@ -208,80 +214,6 @@ const MyCardComponent = () => {
             </Typography>
 
             {/* Category SelectDropDown */}
-            <Box
-              sx={{
-                minHeight: "48px",
-                maxHeight: "48px",
-                minWidth: "279px",
-                maxWidth: "279px",
-                marginTop: "0px",
-                marginBottom: "0px",
-                marginRight: "0px",
-                marginLeft: "0px",
-              }}
-            >
-              <SelectDropDown
-                options={options}
-                selectedValue={featureOption}
-                onChange={setFeatureOption}
-              />{" "}
-            </Box>
-          </Box>
-
-          {/* Update Status SelectDropDown */}
-          <Box
-            sx={{
-              minHeight: "105px",
-              maxHeight: "105px",
-              minWidth: "279px",
-              maxWidth: "279px",
-              marginTop: "10px",
-              marginBottom: "10px",
-              marginRight: "0px",
-              marginLeft: "0px",
-              backgroundColor: " white",
-            }}
-          >
-            {/* Category Title */}
-
-            <Typography
-              variant="h6"
-              fontSize={13}
-              sx={{
-                minHeight: "19px",
-                maxHeight: "19px",
-                minWidth: "87px",
-                maxWidth: "87px",
-                marginTop: "0px",
-                marginBottom: "0px",
-                background: "0px",
-              }}
-            >
-              Update Status
-            </Typography>
-
-            {/* Update Status Description */}
-            <Typography
-              variant="body2"
-              color="textSecondary"
-              fontSize={13}
-              sx={{
-                minHeight: "19px",
-                maxHeight: "19px",
-                minWidth: "183px",
-                maxWidth: "183px",
-                marginTop: "0px",
-                marginBottom: "25px",
-                marginRight: "0px",
-                marginLeft: "0px",
-                background: "0px",
-                padding: "0px",
-              }}
-            >
-              Change feature state
-            </Typography>
-
-            {/* Update Status SelectDropDown */}
             <Box
               sx={{
                 minHeight: "48px",
@@ -371,15 +303,10 @@ const MyCardComponent = () => {
                 variant="outlined"
                 fullWidth
                 multiline
-                placeholder="It would help people with light sensitivities and who prefer dark mode. "
                 sx={{
                   width: "279px",
                   height: "120px",
-                  "& .MuiOutlinedInput-root": {
-                    height: "100%",
-                    fontSize: "13px",
-                    textAlign: "start",
-                  }, // Ensures the input field takes the full height
+                  "& .MuiOutlinedInput-root": { height: "100%" }, // Ensures the input field takes the full height
                 }}
               />
             </Box>
@@ -412,7 +339,7 @@ const MyCardComponent = () => {
               }}
             >
               {" "}
-              Save Changes
+              + Add Feedback
             </Button>
 
             <Button
@@ -431,24 +358,6 @@ const MyCardComponent = () => {
             >
               {" "}
               Cancel
-            </Button>
-
-            <Button
-              sx={{
-                minHeight: 40,
-                maxHeight: 40,
-                minWidth: 279,
-                maxWidth: 279,
-                marginTop: "",
-                marginBottom: "",
-                marginLeft: "0px",
-                backgroundColor: "red",
-                color: "#F2F4FE",
-                padding: "10px",
-              }}
-            >
-              {" "}
-              Delete
             </Button>
           </CardActions>
         </CardContent>

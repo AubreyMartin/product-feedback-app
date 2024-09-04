@@ -4,11 +4,13 @@ import theme from "./shared-library/theme";
 import { Button, Stack, Typography, Grid, Paper, Box } from "@mui/material";
 import "./App.css";
 import FormElements from "./components/FormElements.tsx";
-import Suggestions from "../src/Pages/Suggestion.tsx";
-import SuggestionsEmpty from "../src/Pages/SuggestionsEmpty.tsx";
-import NewFeedbackPage from "../src/Pages/NewFeedbackPage.tsx";
-import EditFeedbackPage from "../src/Pages/EditFeedbackPage.tsx";
-import FeedbackDetailPage from "../src/Pages/FeedbackDetailPage.tsx";
+import Suggestions from "./Pages1/Mobile/Suggestion.tsx";
+import SuggestionsEmpty from "./Pages1/Mobile/SuggestionsEmpty.tsx";
+import NewFeedbackPage from "./Pages1/Mobile/NewFeedbackPage.tsx";
+import EditFeedbackPage from "./Pages1/Mobile/EditFeedbackPage.tsx";
+import FeedbackDetailPage from "./Pages1/Mobile/FeedbackDetailPage.tsx";
+import RoadmapPage from "./Pages1/Mobile/RoadmapPage.tsx";
+import TabletSuggestionsEmpty from "../src/Pages1/Tablet/TabletSuggestionsEmpty.tsx";
 
 // ColorTileGrid Component
 
@@ -314,6 +316,22 @@ function App() {
         }}
       >
         <FeedbackDetailPage />
+      </Box>
+
+      <Box
+        sx={{
+          marginBottom: "20px",
+          mb: 40,
+          backgroundColor: "custom.backgroundAlt",
+        }}
+      >
+        <RoadmapPage />
+      </Box>
+
+      <Box>
+        <Box>
+          <TabletSuggestionsEmpty />
+        </Box>
       </Box>
     </ThemeProvider>
   );
