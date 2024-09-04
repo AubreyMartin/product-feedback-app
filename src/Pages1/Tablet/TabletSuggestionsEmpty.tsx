@@ -1,6 +1,6 @@
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
-import { Box } from "@mui/system";
+import { Box, maxWidth, padding } from "@mui/system";
 import { CardContent } from "@mui/material";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
@@ -43,13 +43,13 @@ const MyCardComponent = () => {
 
 
          {/* Feature Box */}
-         <Card sx={{ marginRight:'10px', padding: '0px 0px 0px 0px', minHeight: '178px', maxHeight: '178px', minWidth: '223px', maxWidth: '223px', background: "white", borderRadius:'10px' }} >
-          <Button>All</Button>
-          <Button> UI</Button>
-          <Button>UX</Button>
-          <Button>Enhancement</Button>
-          <Button>Bug</Button>
-          <Button>Feature</Button>
+         <Card sx={{ marginRight:'10px', padding: '25px 0px 37px 25px', minHeight: '178px', maxHeight: '178px', minWidth: '223px', maxWidth: '223px', background: "white", borderRadius:'10px' }} >
+          <Button sx={{ marginRight:'10px',background:"#4661E6", color:"white", borderRadius:"12px", minHeight:'30px' ,minWidth:'48px' }}>All</Button>
+          <Button sx={{ marginRight:'10px',background:"#F2F4FF", color:"#4661E6", borderRadius:"12px", minHeight:'30px',minWidth:'0px' }}> UI</Button>
+          <Button sx={{ marginRight:'px',background:"#F2F4FF", color:"#4661E6", borderRadius:"12px", minHeight:'30px' ,minWidth:'0px' }}>UX</Button>
+          <Button sx={{ marginTop:'10px',marginRight:'10px',background:"#F2F4FF", color:"#4661E6", borderRadius:"12px", minHeight:'30px' ,minWidth:'0px' }}>Enhancement</Button>
+          <Button sx={{ marginTop:'10px',background:"#F2F4FF", color:"#4661E6", borderRadius:"12px", minHeight:'30px' ,minWidth:'0px' }}>Bug</Button>
+          <Button sx={{ marginTop:'10px',background:"#F2F4FF", color:"#4661E6", borderRadius:"12px", minHeight:'30px' ,minWidth:'0px' }}>Feature</Button>
          </Card>
 
           {/* Roadmap Box */}
