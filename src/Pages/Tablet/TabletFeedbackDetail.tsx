@@ -66,7 +66,7 @@ const MyCardComponent = () => {
          
          <Box sx={{display: "flex", flexDirection: "column", margin: '0px 0px 28px 0px'}}>
         <Typography variant="h1">Add a dark theme option</Typography>
-        <Typography variant="body"  > It would help people like me with light sensitivities. </Typography>
+        <Typography >  It would help people like me with light sensitivities. </Typography>
 
         <Button sx={{ marginTop:'10px',background:"#F2F4FF", color:"#4661E6", borderRadius:"12px", minHeight:'30px',maxHeight:'30px' ,minWidth:'77px',maxWidth:'77px', fontSize:'13'}}>Feature</Button>
         </Box>
