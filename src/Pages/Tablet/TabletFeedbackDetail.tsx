@@ -199,9 +199,9 @@ const MyCardComponent = () => {
 
 
        {/* Add comment card */}
-      <Card  sx={{ margin: "23px 40px 121px 40px",padding: '28px 32px 28px 32px', minHeight: '246px', maxHeight: '246px', minWidth: '689px', maxWidth: '689px', background: "red", }}>
+      <Card  sx={{ margin: "23px 40px 121px 40px",padding: '28px 32px 28px 32px', minHeight: '246px', maxHeight: '246px', minWidth: '689px', maxWidth: '689px', background: "white", }}>
         <Box  sx={{ margin: '0px 0px 0px 0px', minHeight: '0px', maxHeight: '44px', minWidth: '224px', maxWidth: '224px', background: '',  }} >
-            <Typography  sx={{  margin: "22px 536px 23px 33px", minHeight: '26px', maxHeight: '26px', minWidth: '118px', maxWidth: '118px',}}>
+            <Typography  sx={{  margin: "22px 0px 23px 33px", minHeight: '26px', maxHeight: '26px', minWidth: '118px', maxWidth: '118px',}}>
                 Add Comment
             </Typography>
         </Box>
@@ -214,7 +214,7 @@ const MyCardComponent = () => {
   multiline
   rows={3}
   sx={{
-    margin: '0px 0px 16px 0px',
+    margin: '0px 0px 5px 0px',
     minHeight: '80px',
     maxHeight: '80px',
     minWidth: '623px',
@@ -228,9 +228,9 @@ const MyCardComponent = () => {
 
 
 
-        <Box sx={{  margin: "15px 0px 30px 0px", minHeight: '44px', maxHeight: '44px', minWidth: '631px', maxWidth: '631px', background:"", display: "flex", flexDirection: "row"}}>
+        <Box sx={{  margin: "15px 0px 10px 0px", minHeight: '44px', maxHeight: '44px', minWidth: '631px', maxWidth: '631px', background:"", display: "flex", flexDirection: "row"}}>
              
-            <Typography  fontSize={15} sx={{ margin: '10px 0px 0px 0px', minHeight: '22px', maxHeight: '22px', minWidth: '122px', maxWidth: '122px', background: '0px', }} >250 Characters left
+            <Typography  fontSize={15} sx={{ margin: '5px 0px 0px 0px', minHeight: '22px', maxHeight: '22px', minWidth: '122px', maxWidth: '122px', background: '0px', }} >250 Characters left
                 
             </Typography>
            
