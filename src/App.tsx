@@ -4,13 +4,14 @@ import theme from "./shared-library/theme";
 import { Button, Stack, Typography, Grid, Paper, Box } from "@mui/material";
 import "./App.css";
 import FormElements from "./components/FormElements.tsx";
-import Suggestions from "./Pages1/Mobile/Suggestion.tsx";
-import SuggestionsEmpty from "./Pages1/Mobile/SuggestionsEmpty.tsx";
-import NewFeedbackPage from "./Pages1/Mobile/NewFeedbackPage.tsx";
-import EditFeedbackPage from "./Pages1/Mobile/EditFeedbackPage.tsx";
-import FeedbackDetailPage from "./Pages1/Mobile/FeedbackDetailPage.tsx";
-import RoadmapPage from "./Pages1/Mobile/RoadmapPage.tsx";
-import TabletSuggestionsEmpty from "../src/Pages1/Tablet/TabletSuggestionsEmpty.tsx";
+import Suggestions from "./Pages/Mobile/Suggestion.tsx";
+import SuggestionsEmpty from "./Pages/Mobile/SuggestionsEmpty.tsx";
+import NewFeedbackPage from "./Pages/Mobile/NewFeedbackPage.tsx";
+import EditFeedbackPage from "./Pages/Mobile/EditFeedbackPage.tsx";
+import FeedbackDetailPage from "./Pages/Mobile/FeedbackDetailPage.tsx";
+import RoadmapPage from "./Pages/Mobile/RoadmapPage.tsx";
+import TabletSuggestionsEmpty from "./Pages/Tablet/TabletSuggestionsEmpty.tsx";
+import TabletFeedbackDetail from "./Pages/Tablet/TabletFeedbackDetail.tsx"
 
 // ColorTileGrid Component
 
@@ -332,6 +333,11 @@ function App() {
         <Box>
           <TabletSuggestionsEmpty />
         </Box>
+
+        <Box>
+          <TabletFeedbackDetail />
+        </Box>
+
       </Box>
     </ThemeProvider>
   );
