@@ -12,6 +12,8 @@ import FeedbackDetailPage from "./Pages/Mobile/FeedbackDetailPage.tsx";
 import RoadmapPage from "./Pages/Mobile/RoadmapPage.tsx";
 import TabletSuggestionsEmpty from "./Pages/Tablet/TabletSuggestionsEmpty.tsx";
 import TabletFeedbackDetail from "./Pages/Tablet/TabletFeedbackDetail.tsx"
+import TabletNewFeedbackPage from "../src/Pages/Tablet/TabletNewFeedback.tsx"
+import TabletEditFeedback from "../src/Pages/Tablet/TabletEditFeedback.tsx"
 
 // ColorTileGrid Component
 
@@ -337,6 +339,14 @@ function App() {
         <Box>
           <TabletFeedbackDetail />
         </Box>
+
+        <Box>
+         <TabletNewFeedbackPage/>
+         </Box>
+        
+
+        <Box> <TabletEditFeedback/></Box>
+      
 
       </Box>
     </ThemeProvider>
