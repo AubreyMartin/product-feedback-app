@@ -14,7 +14,7 @@ import TabletSuggestionsEmpty from "./Pages/Tablet/TabletSuggestionsEmpty.tsx";
 import TabletFeedbackDetail from "./Pages/Tablet/TabletFeedbackDetail.tsx"
 import TabletNewFeedbackPage from "../src/Pages/Tablet/TabletNewFeedback.tsx"
 import TabletEditFeedback from "../src/Pages/Tablet/TabletEditFeedback.tsx"
-
+import TabletRoadmap from "../src/Pages/Tablet/TabletRoadmap.tsx"
 // ColorTileGrid Component
 
 const ColorTileGrid = () => {
@@ -345,8 +345,9 @@ function App() {
          </Box>
         
 
-        <Box> <TabletEditFeedback/></Box>
-      
+        <Box> <TabletEditFeedback/></Box> 
+        
+        <Box> <TabletRoadmap/></Box>
 
       </Box>
     </ThemeProvider>
