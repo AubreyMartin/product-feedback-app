@@ -25,7 +25,6 @@ import DesktopEditFeedback from "../src/Pages/Desktop/DesktopEditFeedback.tsx"
 
 
 // import DesktopFeedbackDetail from "../src/Pages/Desktop/DesktopFeedbackDetail.tsx"
-// import DesktopEditFeedback from "../src/Pages/Desktop/DesktopEditFeedback.tsx"
 // import DesktopRoadmap from "../src/Pages/Desktop/DesktopRoadmap.tsx"
 
 
@@ -377,7 +376,6 @@ function App() {
         <Box> <DesktopSuggestions/> </Box>
         <Box> <DesktopSuggestionEmpty/> </Box>
         {/* <Box> <DesktopFeedbackDetail/> </Box> */}
-
         <Box> <DesktopNewFeedback/> </Box>
         <Box> <DesktopEditFeedback/> </Box>
         {/* <Box> <DesktopRoadmap/>  </Box>  */}
