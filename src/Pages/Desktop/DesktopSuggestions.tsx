@@ -1,8 +1,5 @@
-import Card from "@mui/material/Card";
-import Typography from "@mui/material/Typography";
-import { Box,  } from "@mui/system";
-import CardActions from "@mui/material/CardActions";
-import Button from "@mui/material/Button";
+import { Button,  Card, Typography, Grid,Box } from '@mui/material';
+
 
 const MyCardComponent = () => {
   return (
@@ -16,44 +13,60 @@ const MyCardComponent = () => {
     >
       <Typography variant="body1" color="textSecondary">
         {" "}
-        02 DesktopSuggestions
+        01 DesktopSuggestions
       </Typography>
 
+      <Grid container spacing={2}>
+      {/* Column 1: Width 255px */}
+      <Grid item style={{ width: '255px' }}>
+        {/* Custom Card */}
+        <Card
+          sx={{
+            margin: '0px 0px 10px 0px',
+            padding: '67px 45px 20px 23px',
+            minHeight: '137px',
+            maxHeight: '137px',
+            minWidth: '255px',
+            maxWidth: '255px',
+            background: 'radial-gradient(circle, #E84D70 0%, #A337F6 53%, #28A7ED 100%)',
+            borderRadius: '10px',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'start',
+            justifyContent: 'center',
+          }}
+        >
+          <Typography variant="h2" color="white" fontSize={20}>
+            Frontend Mentor
+          </Typography>
+          <Typography variant="body1" color="white" fontSize={15}>
+            Feedback Board
+          </Typography>
+        </Card>
 
+        {/* Card 2 */}
+        <Card
+          sx={{
+            margin: '24px 0px 24px 0px',
+            padding: '10px 0px 37px 25px',
+            minHeight: '166px',
+            maxHeight: '166px',
+            minWidth: '255px',
+            maxWidth: '255px',
+            background: 'white',
+            borderRadius: '10px',
+          }}
+        >
+          <Button sx={{ marginRight: '10px', background: '#4661E6', color: 'white', borderRadius: '12px', minHeight: '30px', minWidth: '48px' }}>All</Button>
+          <Button sx={{ marginRight: '10px', background: '#F2F4FF', color: '#4661E6', borderRadius: '12px', minHeight: '30px', minWidth: '0px' }}>UI</Button>
+          <Button sx={{ marginRight: 'px', background: '#F2F4FF', color: '#4661E6', borderRadius: '12px', minHeight: '30px', minWidth: '0px' }}>UX</Button>
+          <Button sx={{ marginTop: '10px', marginRight: '10px', background: '#F2F4FF', color: '#4661E6', borderRadius: '12px', minHeight: '30px', minWidth: '0px' }}>Enhancement</Button>
+          <Button sx={{ marginTop: '10px', background: '#F2F4FF', color: '#4661E6', borderRadius: '12px', minHeight: '30px', minWidth: '0px' }}>Bug</Button>
+          <Button sx={{ marginTop: '10px', background: '#F2F4FF', color: '#4661E6', borderRadius: '12px', minHeight: '30px', minWidth: '0px' }}>Feature</Button>
+        </Card>
 
-      {/* Titel card */}
-      <Box sx={{display:"flex", flexDirection:"row", }}>
-      <Box  sx={{ margin: "56px 116px 40px 40px",minHeight: '529px', maxHeight: '529px', minWidth: '255px', maxWidth: '255px', display: "flex", flexDirection: "column",
-          alignItems: "flex-start", 
-        }}>
-
-
-              {/* Titel Box */}
-        <Card sx={{ margin:'0px 0px 10px 0px', padding: '67px 45px 20px 23px', minHeight: '137px', maxHeight: '137px', minWidth: '255px', maxWidth: '255px', background: 'radial-gradient(circle, #E84D70 0%, #A337F6 53%, #28A7ED 100%)',borderRadius:'10px' }} > 
-
-        <Typography variant = "h2" color="white" fontSize={20}>
-        
-        Frontend Mentor
-      </Typography>
-      <Typography variant="body1" color="White" fontSize={15}>
-       
-        Feedback Board
-      </Typography>
-        </Card >
-
-
-         {/* Feature Box */}
-         <Card sx={{ margin:'24px 0px 24px 0px ', padding: '10px 0px 37px 25px', minHeight: '166px', maxHeight: '166px', minWidth: '255px', maxWidth: '255px', background: "white", borderRadius:'10px' }} >
-          <Button sx={{ marginRight:'10px',background:"#4661E6", color:"white", borderRadius:"12px", minHeight:'30px' ,minWidth:'48px' }}>All</Button>
-          <Button sx={{ marginRight:'10px',background:"#F2F4FF", color:"#4661E6", borderRadius:"12px", minHeight:'30px',minWidth:'0px' }}> UI</Button>
-          <Button sx={{ marginRight:'px',background:"#F2F4FF", color:"#4661E6", borderRadius:"12px", minHeight:'30px' ,minWidth:'0px' }}>UX</Button>
-          <Button sx={{ marginTop:'10px',marginRight:'10px',background:"#F2F4FF", color:"#4661E6", borderRadius:"12px", minHeight:'30px' ,minWidth:'0px' }}>Enhancement</Button>
-          <Button sx={{ marginTop:'10px',background:"#F2F4FF", color:"#4661E6", borderRadius:"12px", minHeight:'30px' ,minWidth:'0px' }}>Bug</Button>
-          <Button sx={{ marginTop:'10px',background:"#F2F4FF", color:"#4661E6", borderRadius:"12px", minHeight:'30px' ,minWidth:'0px' }}>Feature</Button>
-         </Card>
-
-          {/* Roadmap Box */}
-          <Card sx={{ margin:'0px 0px 10px 0px ',padding: '0px 0px 0px 0px', minHeight: '178px', maxHeight: '178px', minWidth: '255px', maxWidth: '255px', background: "", borderRadius:'10px' }} >
+        {/* Card 3 */}
+        <Card sx={{ margin:'0px 0px 10px 0px ',padding: '0px 0px 0px 0px', minHeight: '178px', maxHeight: '178px', minWidth: '255px', maxWidth: '255px', background: "", borderRadius:'10px' }} >
           <svg width="223" height="178" viewBox="0 0 223 178" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="223" height="178" rx="10" fill="white"/>
 <g clip-path="url(#clip0_0_941)">
@@ -92,24 +105,26 @@ const MyCardComponent = () => {
 </defs>
           </svg>
           </Card>
-      </Box>
-        
-      {/* Suggestions card */}
-      <Card
+
+    
+      </Grid>
+
+      {/* Column 2: Width 825px */}
+      <Grid item style={{ width: '825px', margin: ' 0px 109px 15px 20px  ' }}>
+        {/* Card 1 */}
+        <Card
         sx={{
-          minHeight: "72px",
-          maxHeight: "72px",
-          minWidth: "825px",
-          maxWidth: "825px",
-          margin: "0px 40px 0px 90px",
+       
+          margin: "0px 0px 15px 0px",
           backgroundColor: "secondary.light",
           display: "flex",
           flexDirection: "row",
           alignItems: "flex-start",
+          borderRadius:'10px'
         
         }}
       >
-        {/* Suggestion */}
+        {/* Suggestions count */}
         <Box
           sx={{
             minHeight: "26px",
@@ -184,17 +199,14 @@ const MyCardComponent = () => {
             </defs>
           </svg>
         </Box>
-
-        <Box sx={{ margin: "13px 13px 13px 271px" }}>
-          <CardActions>
-            <Button
+        {/* Add button */}
+        <Button
               sx={{
                 minHeight: 44,
                 maxHeight: 44,
                 minWidth: 158,
                 maxWidth: 158,
-                marginRight: "0px",
-                marginLeft: "0px",
+                margin: "15px 0px 15px 220px",
                 backgroundColor: "primary.main",
                 color: "#F2F4FE",
                 padding: "10px",
@@ -202,21 +214,375 @@ const MyCardComponent = () => {
             >
               {" "}
               + Add Feedback
-            </Button>
-          </CardActions>
-        </Box>
-      </Card>
-      {/* Add FeedBack card */}
-    </Box>
-
-    <Box>
-
+        </Button>
          
+       
+      </Card>
+
+        {/* Card 2 */}
+        <Card
+          sx={{
+            marginBottom: '16px',
+            padding: '10px',
+            background: '#E0E0E0',
+            borderRadius: '10px',
+            height: '151px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <Box
+    sx={{ margin: "40px 40px 40px 40px",minHeight: '151px', maxHeight: '151px', minWidth: '825px', maxWidth: '825px', display: "flex", flexDirection: "row",
+          alignItems: "flex-start", background:"white", borderRadius:'10px',padding: "28px 32px 28px 32px"
+        }}>  
+
+        <Box sx={{marginRight: '40px' }}>
+        <svg width="40" height="53" viewBox="0 0 40 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_0_855)">
+<rect width="40" height="53" rx="10" fill="#F2F4FE"/>
+<path d="M15.775 39.961H12.98L15.697 36.932C15.5757 36.9753 15.4457 37.0057 15.307 37.023C15.177 37.0403 15.0253 37.049 14.852 37.049C14.4013 37.049 13.9593 36.932 13.526 36.698C13.0927 36.464 12.7373 36.126 12.46 35.684C12.1827 35.242 12.044 34.7133 12.044 34.098C12.044 33.3527 12.2087 32.7287 12.538 32.226C12.876 31.7147 13.3267 31.3333 13.89 31.082C14.4533 30.822 15.073 30.692 15.749 30.692C16.4337 30.692 17.0533 30.822 17.608 31.082C18.1713 31.3333 18.6177 31.7147 18.947 32.226C19.285 32.7287 19.454 33.3527 19.454 34.098C19.454 34.592 19.35 35.047 19.142 35.463C18.9427 35.879 18.6913 36.269 18.388 36.633L15.775 39.961ZM17.27 34.098C17.27 33.6387 17.1227 33.2703 16.828 32.993C16.542 32.707 16.1823 32.564 15.749 32.564C15.3157 32.564 14.9517 32.707 14.657 32.993C14.3623 33.2703 14.215 33.6387 14.215 34.098C14.215 34.5573 14.3623 34.93 14.657 35.216C14.9517 35.502 15.3157 35.645 15.749 35.645C16.1823 35.645 16.542 35.502 16.828 35.216C17.1227 34.93 17.27 34.5573 17.27 34.098ZM24.2907 39.961H21.4957L24.2127 36.932C24.0914 36.9753 23.9614 37.0057 23.8227 37.023C23.6927 37.0403 23.5411 37.049 23.3677 37.049C22.9171 37.049 22.4751 36.932 22.0417 36.698C21.6084 36.464 21.2531 36.126 20.9757 35.684C20.6984 35.242 20.5597 34.7133 20.5597 34.098C20.5597 33.3527 20.7244 32.7287 21.0537 32.226C21.3917 31.7147 21.8424 31.3333 22.4057 31.082C22.9691 30.822 23.5887 30.692 24.2647 30.692C24.9494 30.692 25.5691 30.822 26.1237 31.082C26.6871 31.3333 27.1334 31.7147 27.4627 32.226C27.8007 32.7287 27.9697 33.3527 27.9697 34.098C27.9697 34.592 27.8657 35.047 27.6577 35.463C27.4584 35.879 27.2071 36.269 26.9037 36.633L24.2907 39.961ZM25.7857 34.098C25.7857 33.6387 25.6384 33.2703 25.3437 32.993C25.0577 32.707 24.6981 32.564 24.2647 32.564C23.8314 32.564 23.4674 32.707 23.1727 32.993C22.8781 33.2703 22.7307 33.6387 22.7307 34.098C22.7307 34.5573 22.8781 34.93 23.1727 35.216C23.4674 35.502 23.8314 35.645 24.2647 35.645C24.6981 35.645 25.0577 35.502 25.3437 35.216C25.6384 34.93 25.7857 34.5573 25.7857 34.098Z" fill="#3A4374"/>
+<path d="M16.3345 18L20.3345 14L24.3345 18" stroke="#4661E6" stroke-width="2"/>
+</g>
+<defs>
+<clipPath id="clip0_0_855">
+<rect width="40" height="53" fill="white"/>
+</clipPath>
+</defs>
+        </svg>
+        </Box>
+ 
+         
+         <Box sx={{display: "flex", flexDirection: "column", margin: '0px 0px 28px 0px'}}>
+        <Typography variant="h1">Add tags for solutions</Typography>
+        <Typography >  Easier to search for solutions based on a specific stack. </Typography>
+
+        <Button sx={{ marginTop: '10px', marginRight: '10px', background: '#F2F4FF', color: '#4661E6', borderRadius: '12px', minHeight: '30px', minWidth: '111px',maxWidth: '111px' }}>Enhancement</Button>
+        </Box>
+
+        <Box sx={{  margin: '40px 0px 0px 260px', minHeight: '23px', maxHeight: '23px', minWidth: '44px', maxWidth: '44px', backgroundColor: "",}}>
+        <svg width="44" height="23" viewBox="0 0 44 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_0_850)">
+<path d="M2.62074 20H1.34534L2.24718 19.0895C2.73344 18.5986 3.0371 17.9601 3.11873 17.2674C1.03637 15.8878 0 13.8892 0 11.7939C0 7.92832 3.51913 4 9.0305 4C14.8692 4 18 7.61479 18 11.4552C18 15.321 14.8361 18.9333 9.0305 18.9333C8.0135 18.9333 6.95226 18.7963 6.00478 18.5448C5.10787 19.4735 3.89262 20 2.62074 20Z" fill="#CDD2EE"/>
+<path d="M29.6381 15.016L36.1341 5.8H38.1501V12.712H39.9101V15.016H38.1501V17H35.3341V15.016H29.6381ZM33.2221 13.064H35.6381V9.72L33.2221 13.064Z" fill="#3A4374"/>
+</g>
+<defs>
+<clipPath id="clip0_0_850">
+<rect width="44" height="23" fill="white"/>
+</clipPath>
+</defs>
+          </svg>  
+          </Box>
+ 
     </Box>
+        </Card>
+         {/* Card 3 */}
+         <Card
+          sx={{
+            marginBottom: '16px',
+            padding: '10px',
+            background: '#E0E0E0',
+            borderRadius: '10px',
+            height: '151px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <Box
+    sx={{ margin: "40px 40px 40px 40px",minHeight: '151px', maxHeight: '151px', minWidth: '825px', maxWidth: '825px', display: "flex", flexDirection: "row",
+          alignItems: "flex-start", background:"white", borderRadius:'10px',padding: "28px 32px 28px 32px"
+        }}>  
 
+        <Box sx={{marginRight: '40px' }}>
+        <svg width="40" height="53" viewBox="0 0 40 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_0_855)">
+<rect width="40" height="53" rx="10" fill="#F2F4FE"/>
+<path d="M15.775 39.961H12.98L15.697 36.932C15.5757 36.9753 15.4457 37.0057 15.307 37.023C15.177 37.0403 15.0253 37.049 14.852 37.049C14.4013 37.049 13.9593 36.932 13.526 36.698C13.0927 36.464 12.7373 36.126 12.46 35.684C12.1827 35.242 12.044 34.7133 12.044 34.098C12.044 33.3527 12.2087 32.7287 12.538 32.226C12.876 31.7147 13.3267 31.3333 13.89 31.082C14.4533 30.822 15.073 30.692 15.749 30.692C16.4337 30.692 17.0533 30.822 17.608 31.082C18.1713 31.3333 18.6177 31.7147 18.947 32.226C19.285 32.7287 19.454 33.3527 19.454 34.098C19.454 34.592 19.35 35.047 19.142 35.463C18.9427 35.879 18.6913 36.269 18.388 36.633L15.775 39.961ZM17.27 34.098C17.27 33.6387 17.1227 33.2703 16.828 32.993C16.542 32.707 16.1823 32.564 15.749 32.564C15.3157 32.564 14.9517 32.707 14.657 32.993C14.3623 33.2703 14.215 33.6387 14.215 34.098C14.215 34.5573 14.3623 34.93 14.657 35.216C14.9517 35.502 15.3157 35.645 15.749 35.645C16.1823 35.645 16.542 35.502 16.828 35.216C17.1227 34.93 17.27 34.5573 17.27 34.098ZM24.2907 39.961H21.4957L24.2127 36.932C24.0914 36.9753 23.9614 37.0057 23.8227 37.023C23.6927 37.0403 23.5411 37.049 23.3677 37.049C22.9171 37.049 22.4751 36.932 22.0417 36.698C21.6084 36.464 21.2531 36.126 20.9757 35.684C20.6984 35.242 20.5597 34.7133 20.5597 34.098C20.5597 33.3527 20.7244 32.7287 21.0537 32.226C21.3917 31.7147 21.8424 31.3333 22.4057 31.082C22.9691 30.822 23.5887 30.692 24.2647 30.692C24.9494 30.692 25.5691 30.822 26.1237 31.082C26.6871 31.3333 27.1334 31.7147 27.4627 32.226C27.8007 32.7287 27.9697 33.3527 27.9697 34.098C27.9697 34.592 27.8657 35.047 27.6577 35.463C27.4584 35.879 27.2071 36.269 26.9037 36.633L24.2907 39.961ZM25.7857 34.098C25.7857 33.6387 25.6384 33.2703 25.3437 32.993C25.0577 32.707 24.6981 32.564 24.2647 32.564C23.8314 32.564 23.4674 32.707 23.1727 32.993C22.8781 33.2703 22.7307 33.6387 22.7307 34.098C22.7307 34.5573 22.8781 34.93 23.1727 35.216C23.4674 35.502 23.8314 35.645 24.2647 35.645C24.6981 35.645 25.0577 35.502 25.3437 35.216C25.6384 34.93 25.7857 34.5573 25.7857 34.098Z" fill="#3A4374"/>
+<path d="M16.3345 18L20.3345 14L24.3345 18" stroke="#4661E6" stroke-width="2"/>
+</g>
+<defs>
+<clipPath id="clip0_0_855">
+<rect width="40" height="53" fill="white"/>
+</clipPath>
+</defs>
+        </svg>
+        </Box>
+ 
+         
+         <Box sx={{display: "flex", flexDirection: "column", margin: '0px 0px 28px 0px'}}>
+        <Typography variant="h1">Add a dark theme option</Typography>
+        <Typography sx={{ minWidth:'476px', maxWidth:'476px'}}>It would help people with light sensitivities and who prefer dark mode.</Typography>
 
+        <Button sx={{ marginTop: '10px', background: '#F2F4FF', color: '#4661E6', borderRadius: '12px', minHeight: '30px', minWidth: '56px',maxWidth: '111px' }}>Feature</Button>        </Box>
 
+        <Box sx={{  margin: '40px 0px 0px 142px', minHeight: '23px', maxHeight: '23px', minWidth: '44px', maxWidth: '44px', backgroundColor: "",}}>
+        <svg width="44" height="23" viewBox="0 0 44 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_0_850)">
+<path d="M2.62074 20H1.34534L2.24718 19.0895C2.73344 18.5986 3.0371 17.9601 3.11873 17.2674C1.03637 15.8878 0 13.8892 0 11.7939C0 7.92832 3.51913 4 9.0305 4C14.8692 4 18 7.61479 18 11.4552C18 15.321 14.8361 18.9333 9.0305 18.9333C8.0135 18.9333 6.95226 18.7963 6.00478 18.5448C5.10787 19.4735 3.89262 20 2.62074 20Z" fill="#CDD2EE"/>
+<path d="M29.6381 15.016L36.1341 5.8H38.1501V12.712H39.9101V15.016H38.1501V17H35.3341V15.016H29.6381ZM33.2221 13.064H35.6381V9.72L33.2221 13.064Z" fill="#3A4374"/>
+</g>
+<defs>
+<clipPath id="clip0_0_850">
+<rect width="44" height="23" fill="white"/>
+</clipPath>
+</defs>
+          </svg>  
+          </Box>
+ 
     </Box>
+        </Card>
+     
+
+         {/* Card 4 */}
+         <Card
+          sx={{
+            marginBottom: '16px',
+            padding: '10px',
+            background: '#E0E0E0',
+            borderRadius: '10px',
+            height: '151px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <Box
+    sx={{ margin: "40px 40px 40px 40px",minHeight: '151px', maxHeight: '151px', minWidth: '825px', maxWidth: '825px', display: "flex", flexDirection: "row",
+          alignItems: "flex-start", background:"white", borderRadius:'10px',padding: "28px 32px 28px 32px"
+        }}>  
+
+        <Box sx={{marginRight: '40px' }}>
+        <svg width="40" height="53" viewBox="0 0 40 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_0_855)">
+<rect width="40" height="53" rx="10" fill="#F2F4FE"/>
+<path d="M15.775 39.961H12.98L15.697 36.932C15.5757 36.9753 15.4457 37.0057 15.307 37.023C15.177 37.0403 15.0253 37.049 14.852 37.049C14.4013 37.049 13.9593 36.932 13.526 36.698C13.0927 36.464 12.7373 36.126 12.46 35.684C12.1827 35.242 12.044 34.7133 12.044 34.098C12.044 33.3527 12.2087 32.7287 12.538 32.226C12.876 31.7147 13.3267 31.3333 13.89 31.082C14.4533 30.822 15.073 30.692 15.749 30.692C16.4337 30.692 17.0533 30.822 17.608 31.082C18.1713 31.3333 18.6177 31.7147 18.947 32.226C19.285 32.7287 19.454 33.3527 19.454 34.098C19.454 34.592 19.35 35.047 19.142 35.463C18.9427 35.879 18.6913 36.269 18.388 36.633L15.775 39.961ZM17.27 34.098C17.27 33.6387 17.1227 33.2703 16.828 32.993C16.542 32.707 16.1823 32.564 15.749 32.564C15.3157 32.564 14.9517 32.707 14.657 32.993C14.3623 33.2703 14.215 33.6387 14.215 34.098C14.215 34.5573 14.3623 34.93 14.657 35.216C14.9517 35.502 15.3157 35.645 15.749 35.645C16.1823 35.645 16.542 35.502 16.828 35.216C17.1227 34.93 17.27 34.5573 17.27 34.098ZM24.2907 39.961H21.4957L24.2127 36.932C24.0914 36.9753 23.9614 37.0057 23.8227 37.023C23.6927 37.0403 23.5411 37.049 23.3677 37.049C22.9171 37.049 22.4751 36.932 22.0417 36.698C21.6084 36.464 21.2531 36.126 20.9757 35.684C20.6984 35.242 20.5597 34.7133 20.5597 34.098C20.5597 33.3527 20.7244 32.7287 21.0537 32.226C21.3917 31.7147 21.8424 31.3333 22.4057 31.082C22.9691 30.822 23.5887 30.692 24.2647 30.692C24.9494 30.692 25.5691 30.822 26.1237 31.082C26.6871 31.3333 27.1334 31.7147 27.4627 32.226C27.8007 32.7287 27.9697 33.3527 27.9697 34.098C27.9697 34.592 27.8657 35.047 27.6577 35.463C27.4584 35.879 27.2071 36.269 26.9037 36.633L24.2907 39.961ZM25.7857 34.098C25.7857 33.6387 25.6384 33.2703 25.3437 32.993C25.0577 32.707 24.6981 32.564 24.2647 32.564C23.8314 32.564 23.4674 32.707 23.1727 32.993C22.8781 33.2703 22.7307 33.6387 22.7307 34.098C22.7307 34.5573 22.8781 34.93 23.1727 35.216C23.4674 35.502 23.8314 35.645 24.2647 35.645C24.6981 35.645 25.0577 35.502 25.3437 35.216C25.6384 34.93 25.7857 34.5573 25.7857 34.098Z" fill="#3A4374"/>
+<path d="M16.3345 18L20.3345 14L24.3345 18" stroke="#4661E6" stroke-width="2"/>
+</g>
+<defs>
+<clipPath id="clip0_0_855">
+<rect width="40" height="53" fill="white"/>
+</clipPath>
+</defs>
+        </svg>
+        </Box>
+ 
+         
+         <Box sx={{display: "flex", flexDirection: "column", margin: '0px 0px 28px 0px'}}>
+        <Typography variant="h1">Q&A within the challenge hubs</Typography>
+        <Typography sx={{ minWidth:'476px', maxWidth:'476px'}}>Challenge-specific Q&A would make for easy reference.</Typography>
+
+        <Button sx={{ marginTop: '10px', background: '#F2F4FF', color: '#4661E6', borderRadius: '12px', minHeight: '30px', minWidth: '56px',maxWidth: '111px' }}>Feature</Button>        </Box>
+
+        <Box sx={{  margin: '40px 0px 0px 142px', minHeight: '23px', maxHeight: '23px', minWidth: '44px', maxWidth: '44px', backgroundColor: "",}}>
+        <svg width="44" height="23" viewBox="0 0 44 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_0_850)">
+<path d="M2.62074 20H1.34534L2.24718 19.0895C2.73344 18.5986 3.0371 17.9601 3.11873 17.2674C1.03637 15.8878 0 13.8892 0 11.7939C0 7.92832 3.51913 4 9.0305 4C14.8692 4 18 7.61479 18 11.4552C18 15.321 14.8361 18.9333 9.0305 18.9333C8.0135 18.9333 6.95226 18.7963 6.00478 18.5448C5.10787 19.4735 3.89262 20 2.62074 20Z" fill="#CDD2EE"/>
+<path d="M29.6381 15.016L36.1341 5.8H38.1501V12.712H39.9101V15.016H38.1501V17H35.3341V15.016H29.6381ZM33.2221 13.064H35.6381V9.72L33.2221 13.064Z" fill="#3A4374"/>
+</g>
+<defs>
+<clipPath id="clip0_0_850">
+<rect width="44" height="23" fill="white"/>
+</clipPath>
+</defs>
+          </svg>  
+          </Box>
+ 
+    </Box>
+        </Card>
+
+         {/* Card 5 */}
+
+        <Card
+          sx={{
+            marginBottom: '16px',
+            padding: '10px',
+            background: '#E0E0E0',
+            borderRadius: '10px',
+            height: '151px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <Box
+    sx={{ margin: "40px 40px 40px 40px",minHeight: '151px', maxHeight: '151px', minWidth: '825px', maxWidth: '825px', display: "flex", flexDirection: "row",
+          alignItems: "flex-start", background:"white", borderRadius:'10px',padding: "28px 32px 28px 32px"
+        }}>  
+
+        <Box sx={{marginRight: '40px' }}>
+        <svg width="40" height="53" viewBox="0 0 40 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_0_855)">
+<rect width="40" height="53" rx="10" fill="#F2F4FE"/>
+<path d="M15.775 39.961H12.98L15.697 36.932C15.5757 36.9753 15.4457 37.0057 15.307 37.023C15.177 37.0403 15.0253 37.049 14.852 37.049C14.4013 37.049 13.9593 36.932 13.526 36.698C13.0927 36.464 12.7373 36.126 12.46 35.684C12.1827 35.242 12.044 34.7133 12.044 34.098C12.044 33.3527 12.2087 32.7287 12.538 32.226C12.876 31.7147 13.3267 31.3333 13.89 31.082C14.4533 30.822 15.073 30.692 15.749 30.692C16.4337 30.692 17.0533 30.822 17.608 31.082C18.1713 31.3333 18.6177 31.7147 18.947 32.226C19.285 32.7287 19.454 33.3527 19.454 34.098C19.454 34.592 19.35 35.047 19.142 35.463C18.9427 35.879 18.6913 36.269 18.388 36.633L15.775 39.961ZM17.27 34.098C17.27 33.6387 17.1227 33.2703 16.828 32.993C16.542 32.707 16.1823 32.564 15.749 32.564C15.3157 32.564 14.9517 32.707 14.657 32.993C14.3623 33.2703 14.215 33.6387 14.215 34.098C14.215 34.5573 14.3623 34.93 14.657 35.216C14.9517 35.502 15.3157 35.645 15.749 35.645C16.1823 35.645 16.542 35.502 16.828 35.216C17.1227 34.93 17.27 34.5573 17.27 34.098ZM24.2907 39.961H21.4957L24.2127 36.932C24.0914 36.9753 23.9614 37.0057 23.8227 37.023C23.6927 37.0403 23.5411 37.049 23.3677 37.049C22.9171 37.049 22.4751 36.932 22.0417 36.698C21.6084 36.464 21.2531 36.126 20.9757 35.684C20.6984 35.242 20.5597 34.7133 20.5597 34.098C20.5597 33.3527 20.7244 32.7287 21.0537 32.226C21.3917 31.7147 21.8424 31.3333 22.4057 31.082C22.9691 30.822 23.5887 30.692 24.2647 30.692C24.9494 30.692 25.5691 30.822 26.1237 31.082C26.6871 31.3333 27.1334 31.7147 27.4627 32.226C27.8007 32.7287 27.9697 33.3527 27.9697 34.098C27.9697 34.592 27.8657 35.047 27.6577 35.463C27.4584 35.879 27.2071 36.269 26.9037 36.633L24.2907 39.961ZM25.7857 34.098C25.7857 33.6387 25.6384 33.2703 25.3437 32.993C25.0577 32.707 24.6981 32.564 24.2647 32.564C23.8314 32.564 23.4674 32.707 23.1727 32.993C22.8781 33.2703 22.7307 33.6387 22.7307 34.098C22.7307 34.5573 22.8781 34.93 23.1727 35.216C23.4674 35.502 23.8314 35.645 24.2647 35.645C24.6981 35.645 25.0577 35.502 25.3437 35.216C25.6384 34.93 25.7857 34.5573 25.7857 34.098Z" fill="#3A4374"/>
+<path d="M16.3345 18L20.3345 14L24.3345 18" stroke="#4661E6" stroke-width="2"/>
+</g>
+<defs>
+<clipPath id="clip0_0_855">
+<rect width="40" height="53" fill="white"/>
+</clipPath>
+</defs>
+        </svg>
+        </Box>
+ 
+         
+         <Box sx={{display: "flex", flexDirection: "column", margin: '0px 0px 28px 0px'}}>
+        <Typography variant="h1">Allow image/video upload to feedback</Typography>
+        <Typography sx={{ minWidth:'476px', maxWidth:'476px'}} >Images and screencasts can enhance comments on solutions.</Typography>
+
+        <Button sx={{ marginTop: '10px', background: '#F2F4FF', color: '#4661E6', borderRadius: '12px', minHeight: '30px', minWidth: '56px',maxWidth: '111px' }}>Feature</Button>        </Box>
+
+        <Box sx={{  margin: '40px 0px 0px 142px', minHeight: '23px', maxHeight: '23px', minWidth: '44px', maxWidth: '44px', backgroundColor: "",}}>
+        <svg width="44" height="23" viewBox="0 0 44 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_0_850)">
+<path d="M2.62074 20H1.34534L2.24718 19.0895C2.73344 18.5986 3.0371 17.9601 3.11873 17.2674C1.03637 15.8878 0 13.8892 0 11.7939C0 7.92832 3.51913 4 9.0305 4C14.8692 4 18 7.61479 18 11.4552C18 15.321 14.8361 18.9333 9.0305 18.9333C8.0135 18.9333 6.95226 18.7963 6.00478 18.5448C5.10787 19.4735 3.89262 20 2.62074 20Z" fill="#CDD2EE"/>
+<path d="M29.6381 15.016L36.1341 5.8H38.1501V12.712H39.9101V15.016H38.1501V17H35.3341V15.016H29.6381ZM33.2221 13.064H35.6381V9.72L33.2221 13.064Z" fill="#3A4374"/>
+</g>
+<defs>
+<clipPath id="clip0_0_850">
+<rect width="44" height="23" fill="white"/>
+</clipPath>
+</defs>
+          </svg>  
+          </Box>
+ 
+    </Box>
+        </Card>
+
+
+        {/* Card 6 */}
+        <Card
+          sx={{
+            marginBottom: '16px',
+            padding: '10px',
+            background: '#E0E0E0',
+            borderRadius: '10px',
+            height: '151px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <Box
+    sx={{ margin: "40px 40px 40px 40px",minHeight: '151px', maxHeight: '151px', minWidth: '825px', maxWidth: '825px', display: "flex", flexDirection: "row",
+          alignItems: "flex-start", background:"white", borderRadius:'10px',padding: "28px 32px 28px 32px"
+        }}>  
+
+        <Box sx={{marginRight: '40px' }}>
+        <svg width="40" height="53" viewBox="0 0 40 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_0_855)">
+<rect width="40" height="53" rx="10" fill="#F2F4FE"/>
+<path d="M15.775 39.961H12.98L15.697 36.932C15.5757 36.9753 15.4457 37.0057 15.307 37.023C15.177 37.0403 15.0253 37.049 14.852 37.049C14.4013 37.049 13.9593 36.932 13.526 36.698C13.0927 36.464 12.7373 36.126 12.46 35.684C12.1827 35.242 12.044 34.7133 12.044 34.098C12.044 33.3527 12.2087 32.7287 12.538 32.226C12.876 31.7147 13.3267 31.3333 13.89 31.082C14.4533 30.822 15.073 30.692 15.749 30.692C16.4337 30.692 17.0533 30.822 17.608 31.082C18.1713 31.3333 18.6177 31.7147 18.947 32.226C19.285 32.7287 19.454 33.3527 19.454 34.098C19.454 34.592 19.35 35.047 19.142 35.463C18.9427 35.879 18.6913 36.269 18.388 36.633L15.775 39.961ZM17.27 34.098C17.27 33.6387 17.1227 33.2703 16.828 32.993C16.542 32.707 16.1823 32.564 15.749 32.564C15.3157 32.564 14.9517 32.707 14.657 32.993C14.3623 33.2703 14.215 33.6387 14.215 34.098C14.215 34.5573 14.3623 34.93 14.657 35.216C14.9517 35.502 15.3157 35.645 15.749 35.645C16.1823 35.645 16.542 35.502 16.828 35.216C17.1227 34.93 17.27 34.5573 17.27 34.098ZM24.2907 39.961H21.4957L24.2127 36.932C24.0914 36.9753 23.9614 37.0057 23.8227 37.023C23.6927 37.0403 23.5411 37.049 23.3677 37.049C22.9171 37.049 22.4751 36.932 22.0417 36.698C21.6084 36.464 21.2531 36.126 20.9757 35.684C20.6984 35.242 20.5597 34.7133 20.5597 34.098C20.5597 33.3527 20.7244 32.7287 21.0537 32.226C21.3917 31.7147 21.8424 31.3333 22.4057 31.082C22.9691 30.822 23.5887 30.692 24.2647 30.692C24.9494 30.692 25.5691 30.822 26.1237 31.082C26.6871 31.3333 27.1334 31.7147 27.4627 32.226C27.8007 32.7287 27.9697 33.3527 27.9697 34.098C27.9697 34.592 27.8657 35.047 27.6577 35.463C27.4584 35.879 27.2071 36.269 26.9037 36.633L24.2907 39.961ZM25.7857 34.098C25.7857 33.6387 25.6384 33.2703 25.3437 32.993C25.0577 32.707 24.6981 32.564 24.2647 32.564C23.8314 32.564 23.4674 32.707 23.1727 32.993C22.8781 33.2703 22.7307 33.6387 22.7307 34.098C22.7307 34.5573 22.8781 34.93 23.1727 35.216C23.4674 35.502 23.8314 35.645 24.2647 35.645C24.6981 35.645 25.0577 35.502 25.3437 35.216C25.6384 34.93 25.7857 34.5573 25.7857 34.098Z" fill="#3A4374"/>
+<path d="M16.3345 18L20.3345 14L24.3345 18" stroke="#4661E6" stroke-width="2"/>
+</g>
+<defs>
+<clipPath id="clip0_0_855">
+<rect width="40" height="53" fill="white"/>
+</clipPath>
+</defs>
+        </svg>
+        </Box>
+ 
+         
+         <Box sx={{display: "flex", flexDirection: "column", margin: '0px 0px 28px 0px'}}>
+        <Typography variant="h1">Ability to follow others</Typography>
+        <Typography sx={{ minWidth:'476px', maxWidth:'476px'}} >Stay updated on comments and solutions other people post.</Typography>
+
+        <Button sx={{ marginTop: '10px', background: '#F2F4FF', color: '#4661E6', borderRadius: '12px', minHeight: '30px', minWidth: '56px',maxWidth: '111px' }}>Feature</Button>        </Box>
+
+        <Box sx={{  margin: '40px 0px 0px 142px', minHeight: '23px', maxHeight: '23px', minWidth: '44px', maxWidth: '44px', backgroundColor: "",}}>
+        <svg width="44" height="23" viewBox="0 0 44 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_0_850)">
+<path d="M2.62074 20H1.34534L2.24718 19.0895C2.73344 18.5986 3.0371 17.9601 3.11873 17.2674C1.03637 15.8878 0 13.8892 0 11.7939C0 7.92832 3.51913 4 9.0305 4C14.8692 4 18 7.61479 18 11.4552C18 15.321 14.8361 18.9333 9.0305 18.9333C8.0135 18.9333 6.95226 18.7963 6.00478 18.5448C5.10787 19.4735 3.89262 20 2.62074 20Z" fill="#CDD2EE"/>
+<path d="M29.6381 15.016L36.1341 5.8H38.1501V12.712H39.9101V15.016H38.1501V17H35.3341V15.016H29.6381ZM33.2221 13.064H35.6381V9.72L33.2221 13.064Z" fill="#3A4374"/>
+</g>
+<defs>
+<clipPath id="clip0_0_850">
+<rect width="44" height="23" fill="white"/>
+</clipPath>
+</defs>
+          </svg>  
+          </Box>
+ 
+    </Box>
+        </Card>
+
+        {/* Card 7 */}
+        <Card
+          sx={{
+            marginBottom: '16px',
+            padding: '10px',
+            background: '#E0E0E0',
+            borderRadius: '10px',
+            height: '151px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <Box
+    sx={{ margin: "40px 40px 40px 40px",minHeight: '151px', maxHeight: '151px', minWidth: '825px', maxWidth: '825px', display: "flex", flexDirection: "row",
+          alignItems: "flex-start", background:"white", borderRadius:'10px',padding: "28px 32px 28px 32px"
+        }}>  
+
+        <Box sx={{marginRight: '40px' }}>
+        <svg width="40" height="53" viewBox="0 0 40 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_0_855)">
+<rect width="40" height="53" rx="10" fill="#F2F4FE"/>
+<path d="M15.775 39.961H12.98L15.697 36.932C15.5757 36.9753 15.4457 37.0057 15.307 37.023C15.177 37.0403 15.0253 37.049 14.852 37.049C14.4013 37.049 13.9593 36.932 13.526 36.698C13.0927 36.464 12.7373 36.126 12.46 35.684C12.1827 35.242 12.044 34.7133 12.044 34.098C12.044 33.3527 12.2087 32.7287 12.538 32.226C12.876 31.7147 13.3267 31.3333 13.89 31.082C14.4533 30.822 15.073 30.692 15.749 30.692C16.4337 30.692 17.0533 30.822 17.608 31.082C18.1713 31.3333 18.6177 31.7147 18.947 32.226C19.285 32.7287 19.454 33.3527 19.454 34.098C19.454 34.592 19.35 35.047 19.142 35.463C18.9427 35.879 18.6913 36.269 18.388 36.633L15.775 39.961ZM17.27 34.098C17.27 33.6387 17.1227 33.2703 16.828 32.993C16.542 32.707 16.1823 32.564 15.749 32.564C15.3157 32.564 14.9517 32.707 14.657 32.993C14.3623 33.2703 14.215 33.6387 14.215 34.098C14.215 34.5573 14.3623 34.93 14.657 35.216C14.9517 35.502 15.3157 35.645 15.749 35.645C16.1823 35.645 16.542 35.502 16.828 35.216C17.1227 34.93 17.27 34.5573 17.27 34.098ZM24.2907 39.961H21.4957L24.2127 36.932C24.0914 36.9753 23.9614 37.0057 23.8227 37.023C23.6927 37.0403 23.5411 37.049 23.3677 37.049C22.9171 37.049 22.4751 36.932 22.0417 36.698C21.6084 36.464 21.2531 36.126 20.9757 35.684C20.6984 35.242 20.5597 34.7133 20.5597 34.098C20.5597 33.3527 20.7244 32.7287 21.0537 32.226C21.3917 31.7147 21.8424 31.3333 22.4057 31.082C22.9691 30.822 23.5887 30.692 24.2647 30.692C24.9494 30.692 25.5691 30.822 26.1237 31.082C26.6871 31.3333 27.1334 31.7147 27.4627 32.226C27.8007 32.7287 27.9697 33.3527 27.9697 34.098C27.9697 34.592 27.8657 35.047 27.6577 35.463C27.4584 35.879 27.2071 36.269 26.9037 36.633L24.2907 39.961ZM25.7857 34.098C25.7857 33.6387 25.6384 33.2703 25.3437 32.993C25.0577 32.707 24.6981 32.564 24.2647 32.564C23.8314 32.564 23.4674 32.707 23.1727 32.993C22.8781 33.2703 22.7307 33.6387 22.7307 34.098C22.7307 34.5573 22.8781 34.93 23.1727 35.216C23.4674 35.502 23.8314 35.645 24.2647 35.645C24.6981 35.645 25.0577 35.502 25.3437 35.216C25.6384 34.93 25.7857 34.5573 25.7857 34.098Z" fill="#3A4374"/>
+<path d="M16.3345 18L20.3345 14L24.3345 18" stroke="#4661E6" stroke-width="2"/>
+</g>
+<defs>
+<clipPath id="clip0_0_855">
+<rect width="40" height="53" fill="white"/>
+</clipPath>
+</defs>
+        </svg>
+        </Box>
+ 
+         
+         <Box sx={{display: "flex", flexDirection: "column", margin: '0px 0px 28px 0px'}}>
+        <Typography variant="h1">Preview images not loading</Typography>
+        <Typography sx={{ minWidth:'476px', maxWidth:'476px'}} >Challenge preview images are missing when you apply a filter.</Typography>
+
+        <Button sx={{ marginTop: '10px', background: '#F2F4FF', color: '#4661E6', borderRadius: '12px', minHeight: '30px', minWidth: '56px',maxWidth: '56px' }}>Bug</Button>        </Box>
+
+        <Box sx={{  margin: '40px 0px 0px 142px', minHeight: '23px', maxHeight: '23px', minWidth: '44px', maxWidth: '44px', backgroundColor: "",}}>
+        <svg width="44" height="23" viewBox="0 0 44 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_0_850)">
+<path d="M2.62074 20H1.34534L2.24718 19.0895C2.73344 18.5986 3.0371 17.9601 3.11873 17.2674C1.03637 15.8878 0 13.8892 0 11.7939C0 7.92832 3.51913 4 9.0305 4C14.8692 4 18 7.61479 18 11.4552C18 15.321 14.8361 18.9333 9.0305 18.9333C8.0135 18.9333 6.95226 18.7963 6.00478 18.5448C5.10787 19.4735 3.89262 20 2.62074 20Z" fill="#CDD2EE"/>
+<path d="M29.6381 15.016L36.1341 5.8H38.1501V12.712H39.9101V15.016H38.1501V17H35.3341V15.016H29.6381ZM33.2221 13.064H35.6381V9.72L33.2221 13.064Z" fill="#3A4374"/>
+</g>
+<defs>
+<clipPath id="clip0_0_850">
+<rect width="44" height="23" fill="white"/>
+</clipPath>
+</defs>
+          </svg>  
+          </Box>
+ 
+    </Box>
+        </Card>
+
+
+
+
+        
+
+      </Grid>
+    </Grid>
+
+
+
+ 
+
+    
+
+
+
+    
+    </Box>
+    
   );
 };
 
