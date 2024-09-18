@@ -8,6 +8,7 @@ import { useState } from "react";
 
 
 const MyCardComponent = () => {
+    
     const [featureOption, setFeatureOption] = useState<string>("");
     const options = [
       { value: "Feature", label: "Feature" },
@@ -26,7 +27,7 @@ sx={{
   backgroundColor: "custom.backgroundAlt",
 }}
 >
-<Typography variant="body1" color="textSecondary">04 DesktopNewFeedback</Typography>
+<Typography variant="body1" color="textSecondary">05 Desktop Edit Feedback</Typography>
 
 <Box sx={{ margin:'55px 0px 67px 114px '}}>
        <svg width="76" height="20" viewBox="0 0 76 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,39 +44,43 @@ sx={{
 
        </Box>
 
+
       {/* Card  */}
       <Card
-        elevation={0}
+        className="SuggestionsEmpty"
         sx={{
-          boxShadow: 'none',
-          border: 'none', background:"",  margin: '0px 0px 0px 114px', minHeight: '745px', maxHeight: '745px', minWidth: '540px', maxWidth: '540px', 
-      
-        }}> 
-
-       <Box sx={{margin:'0px 0px 0px 44px '}}>
-       <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Group 4">
-<circle id="Oval" cx="28" cy="28" r="28" fill="url(#paint0_radial_0_840)"/>
-<path id="+" d="M30.3425 36V30.1657H36.0295V25.8637H30.3425V20H25.7459V25.8637H20V30.1657H25.7459V36H30.3425Z" fill="white"/>
-</g>
+          backgroundColor: "white",
+          minHeight: '910px',
+          maxHeight: '910px',
+          minWidth: '540px',
+          maxWidth: '540px',
+          margin: '25px 40px 22px 115px',
+          borderRadius: "10px",
+        }}
+      >   
+         <Box sx={{margin:'0px 0px 0px 44px '}}><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="28" cy="28" r="28" fill="url(#paint0_radial_0_801)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M29.0825 19.4809L32.8315 16L39.345 22.2719L35.7969 25.952L29.0825 19.4809ZM16 39.5949C16.9207 35.6533 19.4867 25.5743 19.4867 25.5743L27.6895 20.7535L34.5209 27.1499L29.3017 34.97L16.313 40L22.4703 34.2104C23.513 34.5998 24.9857 34.2478 25.7818 33.3736C26.8328 32.2255 26.7539 30.4423 25.605 29.3914C24.456 28.3404 22.5848 28.3404 21.5339 29.4885C20.751 30.3444 20.4812 31.8544 20.9287 32.8498L16 39.5949Z" fill="white"/>
 <defs>
-<radialGradient id="paint0_radial_0_840" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(58.184 -5.81647) rotate(129.411) scale(93.4169)">
+<radialGradient id="paint0_radial_0_801" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(58.184 -5.81647) rotate(129.411) scale(93.4169)">
 <stop stop-color="#E84D70"/>
 <stop offset="0.530886" stop-color="#A337F6"/>
 <stop offset="1" stop-color="#28A7ED"/>
 </radialGradient>
 </defs>
-       </svg>
-        </Box>
+</svg>
+
+
+         </Box>
+ 
 
         <CardContent
           sx={{
-            minHeight: '657px',
-            maxHeight: '657px',
-            minWidth: '540px',
-            maxWidth: '540px',
-            borderRadius: '10px',
-            margin: '0px 0px 0px 0px',
+            minHeight: 308,
+            maxHeight: 308,
+            minWidth: 278,
+            maxWidth: 278,
+            margin: '0px 0px 0px 44px',
             background: "white",
             padding: 0,
           }}
@@ -83,42 +88,32 @@ sx={{
           {/* Heading */}
           <Box
             sx={{
-              backgroundColor: " ",
-            //   marginBottom: "25px", 
-              margin: '0px 44px 52px 44px',
+              backgroundColor: "",
+              marginBottom: "25px",
+              margin: '30px 0px 76px 0px',
+              minWidth:'456px',
             }}
           >
             <Typography variant="h1" fontSize={24} color="textSecondary">
-              Create New Feedback
+              Editing ‘Add a dark theme option’
             </Typography>
           </Box>
 
           {/* Feedback Title */}
           <Box
             sx={{
-              minHeight: "106px",
-              maxHeight: "106px",
+              minHeight: "105px",
+              maxHeight: "105px",
               minWidth: "456px",
               maxWidth: "456px",
-              margin: '0px 44px 22px 44px',
-              background : " ",
+              backgroundColor: " ",
             }}
           >
             {/* Feedback Title */}
 
             <Typography
               variant="h6"
-              fontSize={13}
-              sx={{
-                minHeight: "19px",
-                maxHeight: "19px",
-                minWidth: "87px",
-                maxWidth: "87px",
-                marginTop: "0px",
-                marginBottom: "0px",
-                background: "custom.backgroundAlt",
-              }}
-            >
+              fontSize={13} sx={{margin: '0px 0px 0px 0px '}}>
               Feedback Title
             </Typography>
 
@@ -126,48 +121,37 @@ sx={{
             <Typography
               variant="body2"
               color="textSecondary"
-              fontSize={14}
-              sx={{ margin: '0px 0px 22px 0px ',
-              }}
-            >
+              fontSize={13}
+              sx={{margin: '0px 0px 15px 0px '}}>
               Add a short, descriptive headline
             </Typography>
+
             {/*  Feedback TextField */}
 
-            <Box
-              sx={{
-                minHeight: "48px",
-                maxHeight: "48px",
-                minWidth: "456px",
-                maxWidth: "456px"
-
-              }}
-            >
-              <TextField variant="outlined" fullWidth />
-            </Box>
+              <TextField
+                variant="outlined"
+                fullWidth
+                placeholder="Add a dark theme option"
+              />
+           
           </Box>
 
           {/* Category box */}
           <Box
             sx={{
-              minHeight: "105px",
-              maxHeight: "105px",
+              minHeight: "236px",
+              maxHeight: "236px",
               minWidth: "456px",
               maxWidth: "456px",
-              margin: '28px 0px 28px 44px',
-              backgroundColor: " ",
+              margin: ' 27px 0px 27px 0px',
+              backgroundColor: "",
             }}
           >
             {/* Category Title */}
 
             <Typography
               variant="h6"
-              fontSize={13}
-              sx={{
-                margin: '0px 0px 0px 0px',
-                background: "0",
-              }}
-            >
+              fontSize={14}> 
               Category
             </Typography>
 
@@ -175,22 +159,45 @@ sx={{
             <Typography
               variant="body2"
               color="textSecondary"
-              fontSize={14}
-              sx={{
-                margin: '0px 0px 17px 0px',
-                background: "0px",
-                padding: "0px",
+              fontSize={13}
+              sx={{ margin:'0px 0px 15px 0px '
+              
               }}
             >
               Choose a category for your feedback
             </Typography>
 
             {/* Category SelectDropDown */}
-            <SelectDropDown
+          
+              <SelectDropDown
                 options={options}
                 selectedValue={featureOption}
                 onChange={setFeatureOption}
-               
+              />{" "}
+         
+          {/* Update Status SelectDropDown */}
+        
+            {/* Category Title */}
+            <Typography
+              variant="h6"
+              fontSize={14}
+             sx={{margin: '28px 0px 0px 0px '}}
+            >
+              Update Status
+            </Typography>
+            {/* Update Status Description */}
+            <Typography
+              variant="body2"
+              color="textSecondary"
+              fontSize={14} sx={{margin:'0px 0px 15px 0px '}}
+            >
+              Change feature state
+            </Typography>
+            {/* Update Status SelectDropDown */}
+              <SelectDropDown
+                options={options}
+                selectedValue={featureOption}
+                onChange={setFeatureOption}
               />{" "}
             
           </Box>
@@ -198,44 +205,45 @@ sx={{
           {/* Feedback Detail box */}
           <Box
             sx={{
-              minHeight: "196px",
-              maxHeight: "196px",
+              minHeight: "154px",
+              maxHeight: "154px",
               minWidth: "456px",
               maxWidth: "456px",
-              margin: '0px 44px 0px 44px',
-              backgroundColor: " white",
-            }}
+              margin: '22px 0px 31px 0px'
+           }}
           >
             {/* Feedback Detail Title */}
             <Typography
               variant="h6"
-              fontSize={14}
-            >
+              fontSize={13}>
               Feedback Details
             </Typography>
+
             {/* Feedback Detail Description */}
             <Typography
               variant="body2"
               color="textSecondary"
-              fontSize={13}
-              sx={{
-                margin: '0px 0px 20px 0px',
-                background: "0px",
-                padding: "0px",
+              fontSize={14} sx={{ margin: '0px 0px 15px 0px '
               }}
             >
               Include any specific comments on what should be improved, added,
               etc.
             </Typography>
 
-            <TextField variant="outlined"
+            <TextField
+                variant="outlined"
                 fullWidth
                 multiline
+                placeholder="It would help people with light sensitivities and who prefer dark mode. "
                 sx={{
                   width: "456px",
                   height: "96px",
-                  "& .MuiOutlinedInput-root": { height: "100%" },   }} />
-          
+                  "& .MuiOutlinedInput-root": {
+                    height: "100%",
+                    fontSize: "15px",}, 
+                }}
+              />
+           
           </Box>
 
           {/* Add feedback Button & Cancel Button   */}
@@ -243,10 +251,8 @@ sx={{
             sx={{
               display: "flex",
               flexDirection: "row",
-              alignItems: "center", // Center align the buttons horizontally
-              gap: "16px", // Optional: adds space between the buttons
-              margin:'32px 40px 40px 242px '
-          
+              gap: '5px',
+             margin: '30px 0px 0px 0px'
             }}
           >
 
@@ -256,16 +262,36 @@ sx={{
                 minHeight: '44px',
                 maxHeight: '44px',
                 minWidth: '93px',
+                maxWidth: '93pxs',
+                marginLeft: "0px",
+                backgroundColor: "#D73737",
+                color: "#F2F4FE",
+                padding: "10px",
+                margin: '0px 110px 0px 0px'
+              }}
+            >
+              {" "}
+              Delete
+            </Button>
+           
+
+            <Button
+              sx={{
+                minHeight: '44px',
+                maxHeight: '44px',
+                minWidth: '93px',
                 maxWidth: '93px',
-                marginBottom: "",
+                marginLeft: "0px",
                 backgroundColor: "secondary.light",
                 color: "#F2F4FE",
                 padding: "10px",
+                margin: '0px 0px 0px 0px'
               }}
             >
               {" "}
               Cancel
             </Button>
+
             <Button
               sx={{
                 minHeight: '44px',
@@ -274,25 +300,18 @@ sx={{
                 maxWidth: '144px',
                 backgroundColor: "primary.main",
                 color: "#F2F4FE",
-                padding: "10px",
-               
-              }}
+                padding: "10px", }}
             >
               {" "}
-              Add Feedback
+              Save Changes
             </Button>
 
-          
+         
           </CardActions>
         </CardContent>
       </Card>
+    </Box>
 
-
-
-
-
-
-</Box>
 
 );
 };
