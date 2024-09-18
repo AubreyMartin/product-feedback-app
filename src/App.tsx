@@ -17,8 +17,21 @@ import TabletEditFeedback from "../src/Pages/Tablet/TabletEditFeedback.tsx"
 import TabletRoadmap from "../src/Pages/Tablet/TabletRoadmap.tsx"
 import DesktopSuggestionEmpty from "./Pages/Desktop/DesktopSuggestionEmpty.tsx"
 import DesktopSuggestions from "../src/Pages/Desktop/DesktopSuggestions.tsx"
-import Test from "../src/Pages/Desktop/Test.tsx"
+import DesktopNewFeedback from "../src/Pages/Desktop/DesktopNewFeedback.tsx"
 
+
+
+
+
+// import DesktopFeedbackDetail from "../src/Pages/Desktop/DesktopFeedbackDetail.tsx"
+// import DesktopNewFeedback from "../src/Pages/Desktop/DesktopNewFeedback.tsx"
+// import DesktopEditFeedback from "../src/Pages/Desktop/DesktopEditFeedback.tsx"
+// import DesktopRoadmap from "../src/Pages/Desktop/DesktopRoadmap.tsx"
+
+
+
+
+import Test from "../src/Pages/Desktop/Test.tsx"
 
 
 
@@ -363,6 +376,11 @@ function App() {
       <Box>
         <Box> <DesktopSuggestions/> </Box>
         <Box> <DesktopSuggestionEmpty/> </Box>
+        {/* <Box> <DesktopFeedbackDetail/> </Box> */}
+
+        <Box> <DesktopNewFeedback/> </Box>
+        {/* <Box> <DesktopEditFeedback/> </Box>
+        <Box> <DesktopRoadmap/>  </Box>  */}
         <Box> <Test/> </Box>
 
       </Box>
