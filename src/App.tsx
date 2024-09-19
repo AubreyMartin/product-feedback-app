@@ -14,6 +14,26 @@ import TabletSuggestionsEmpty from "./Pages/Tablet/TabletSuggestionsEmpty.tsx";
 import TabletFeedbackDetail from "./Pages/Tablet/TabletFeedbackDetail.tsx"
 import TabletNewFeedbackPage from "../src/Pages/Tablet/TabletNewFeedback.tsx"
 import TabletEditFeedback from "../src/Pages/Tablet/TabletEditFeedback.tsx"
+import TabletRoadmap from "../src/Pages/Tablet/TabletRoadmap.tsx"
+import DesktopSuggestionEmpty from "./Pages/Desktop/DesktopSuggestionEmpty.tsx"
+import DesktopSuggestions from "../src/Pages/Desktop/DesktopSuggestions.tsx"
+import DesktopNewFeedback from "../src/Pages/Desktop/DesktopNewFeedback.tsx"
+import DesktopEditFeedback from "../src/Pages/Desktop/DesktopEditFeedback.tsx"
+
+
+
+
+
+// import DesktopFeedbackDetail from "../src/Pages/Desktop/DesktopFeedbackDetail.tsx"
+// import DesktopRoadmap from "../src/Pages/Desktop/DesktopRoadmap.tsx"
+
+
+
+
+import Test from "../src/Pages/Desktop/Test.tsx"
+
+
+
 
 // ColorTileGrid Component
 
@@ -345,8 +365,21 @@ function App() {
          </Box>
         
 
-        <Box> <TabletEditFeedback/></Box>
-      
+        <Box> <TabletEditFeedback/></Box> 
+        
+        <Box> <TabletRoadmap/></Box>
+
+      </Box>
+
+
+      <Box>
+        <Box> <DesktopSuggestions/> </Box>
+        <Box> <DesktopSuggestionEmpty/> </Box>
+        {/* <Box> <DesktopFeedbackDetail/> </Box> */}
+        <Box> <DesktopNewFeedback/> </Box>
+        <Box> <DesktopEditFeedback/> </Box>
+        {/* <Box> <DesktopRoadmap/>  </Box>  */}
+        <Box> <Test/> </Box>
 
       </Box>
     </ThemeProvider>
